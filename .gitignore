@@ -1,0 +1,6 @@
+﻿# Only the website is published. Originals, private photos and planning docs stay local.
+Media/
+BUILD-PLAN.md
+.claude/
+*.zip
+*.tar.gz

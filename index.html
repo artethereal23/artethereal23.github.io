@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prakruti Patel — Visual Artist, Muralist &amp; Art Educator</title>
+  <meta name="description" content="Prakruti Patel is a Vancouver-based visual artist creating paintings, drawings, illustrations and murals, and teaching art to people of every age. Commissions, murals and classes.">
+  <meta name="theme-color" content="#F6F1E9">
+  <meta property="og:title" content="Prakruti Patel — Visual Artist">
+  <meta property="og:description" content="From a single line to an entire wall. Paintings, drawings, murals and art classes in Vancouver, Canada.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/work/geometric-living-room-1.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23F6F1E9'/%3E%3Cpath d='M28 78V22c26 0 26 30 0 30M52 78V36c24 0 24 26 0 26' fill='none' stroke='%231C1A18' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prakruti Patel",
+    "jobTitle": "Visual Artist, Muralist & Art Educator",
+    "email": "mailto:artethereal23@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "BC", "addressCountry": "CA" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Seneca College" },
+    "sameAs": ["https://www.linkedin.com/in/prakruti-patel-8780711b7"]
+  }
+  </script>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared line-art symbol: the botanical profile used across films & placeholders -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="botanical" viewBox="0 0 600 800">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M300 150 C360 140 405 175 415 230 C422 268 418 300 428 325 C436 345 458 362 450 378 C443 390 428 388 431 402 C434 414 446 418 438 432 C431 442 436 452 432 464 C426 486 400 496 372 494 C352 493 342 506 342 530 L340 640"/>
+          <path d="M300 150 C230 158 188 220 196 300 C204 372 246 420 280 458 C306 488 300 548 268 600 C240 646 236 700 262 760"/>
+          <path d="M262 190 C222 240 222 320 256 380 C284 430 330 452 322 520"/>
+          <path d="M392 262 C400 256 410 258 414 264"/>
+          <path d="M214 250 C170 220 138 176 128 118"/>
+          <path d="M128 118 C160 124 176 156 168 190 C144 176 128 150 128 118 Z"/>
+          <path d="M150 200 C120 206 96 190 84 162 C114 158 138 174 150 200 Z"/>
+          <path d="M206 360 C150 360 104 330 80 280"/>
+          <path d="M80 280 C112 276 136 298 138 330 C108 326 86 306 80 280 Z"/>
+          <path d="M120 344 C98 366 70 372 44 360 C62 336 94 330 120 344 Z"/>
+          <path d="M268 600 C320 610 360 650 372 700"/>
+          <path d="M372 700 C400 690 420 712 414 740 C390 736 372 722 372 700 Z"/>
+          <path d="M300 118 C290 88 312 70 324 96 C348 84 358 110 334 120 C352 140 332 158 314 140 C302 164 278 150 292 128 C268 120 278 96 300 118 Z"/>
+          <path d="M470 560 C500 520 540 540 530 575 C560 590 540 630 510 612 C500 645 460 640 466 606 C434 600 440 560 470 560 Z"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <!-- PRELOADER -->
+  <div class="preloader" aria-hidden="true">
+    <svg class="preloader__mark" viewBox="0 0 100 100">
+      <path class="draw" d="M28 78V22c26 0 26 30 0 30M52 78V36c24 0 24 26 0 26"/>
+    </svg>
+    <div class="preloader__meta">
+      <span class="label">Prakruti Patel — Visual Artist</span>
+      <span class="label preloader__count">000</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__brand" data-cursor="Home">Prakruti Patel</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" class="u-link">Work</a>
+      <a href="#web" class="u-link">Web</a>
+      <a href="#about" class="u-link">About</a>
+      <a href="#services" class="u-link">Services</a>
+      <a href="#shop" class="u-link nav__shop">Shop<sup>soon</sup></a>
+      <a href="#enquire" class="u-link">Contact</a>
+    </nav>
+    <a href="#enquire" class="btn btn--primary btn--sm nav__cta magnetic"><span>Work With Me</span></a>
+    <button class="nav__menu" aria-expanded="false" aria-controls="menu">Menu</button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#work">Work</a>
+      <a href="#web">Web</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#shop">Shop<sup>soon</sup></a>
+      <a href="#enquire">Contact</a>
+    </nav>
+    <div class="menu__foot label">Vancouver, Canada · artethereal23@gmail.com</div>
+  </div>
+
+  <main id="main">
+
+    <!-- 1. HERO — Scene 1 "The First Line" -->
+    <section class="hero film" id="top" data-film="1" aria-labelledby="hero-title">
+      <div class="film__stage">
+        <canvas class="film__canvas" role="img" aria-label="Close-up of Prakruti sketching a botanical drawing in a large sketchbook"></canvas>
+        <div class="film__ph hero__ph" aria-hidden="true">
+          <div class="hero__paper"></div>
+          <svg class="hero__drawing" viewBox="0 0 600 800"><use href="#botanical"/></svg>
+          <span class="hero__tip"></span>
+        </div>
+        <div class="hero__vignette" aria-hidden="true"></div>
+
+        <div class="hero__content wrap">
+          <p class="label hero__eyebrow">Visual Artist — Muralist — Art Educator</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="line">Every wall</span>
+            <span class="line">begins with a</span>
+            <span class="line"><em>single line.</em>
+              <svg class="scribble" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true"><path class="draw" d="M4 20 C80 8 160 26 240 14 C300 6 350 18 396 10"/></svg>
+            </span>
+          </h1>
+          <div class="hero__bottom">
+            <p class="hero__sub">Paintings, drawings, illustrations and murals, plus art classes that help people of every age find their creative voice.</p>
+            <div class="hero__ctas">
+              <a href="#enquire" class="btn btn--primary magnetic"><span>Work With Me</span></a>
+              <a href="#work" class="u-link hero__link">View My Work →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__meta wrap label" aria-hidden="true">
+          <span class="hero__scroll">Scroll to begin <svg viewBox="0 0 60 12"><path class="draw" d="M2 6 C16 0 30 12 44 6 L58 6"/></svg></span>
+          <span>Based in Vancouver, Canada — <span data-clock>--:--</span> PT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. STATS STRIP -->
+    <section class="stats" aria-label="Highlights">
+      <div class="wrap stats__grid">
+        <div class="stat"><span class="stat__num" data-scramble="BA">BA</span><span class="label">Visual Arts</span></div>
+        <div class="stat"><span class="stat__num"><span data-count="8">8</span>+</span><span class="label">Years painting murals &amp; walls</span></div>
+        <div class="stat"><span class="stat__num"><span data-count="10">10</span>+</span><span class="label">Students mentored as Peer Mentor</span></div>
+        <div class="stat"><span class="stat__num" data-scramble="PG">PG</span><span class="label">3D Animation &amp; VFX, Seneca College</span></div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Drawing <i>✦</i> <em>Painting</em> <i>✦</i> Digital Illustration <i>✦</i> <em>Murals</em> <i>✦</i> Visual Development <i>✦</i> <em>Art Education</em> <i>✦</i>&nbsp;</span>
+          <span>Drawing <i>✦</i> <em>Painting</em> <i>✦</i> Digital Illustration <i>✦</i> <em>Murals</em> <i>✦</i> Visual Development <i>✦</i> <em>Art Education</em> <i>✦</i>&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MISSION -->
+    <section class="mission" aria-label="Mission">
+      <div class="wrap">
+        <p class="label">00 — Why I make</p>
+        <p class="mission__text" data-words>
+          I believe art should be <em>felt</em>, <em>lived with</em>, and <em>shared</em>. I make work that brings ideas and spaces <em>to life</em>, and I teach so creativity feels open to <em>everyone</em>: the curious child, the nervous beginner, the returning artist.
+        </p>
+        <svg class="mission__sig" viewBox="0 0 320 90" aria-label="Signed, Prakruti" role="img">
+          <path class="draw" d="M10 70 C30 20 40 10 44 40 C46 60 30 70 26 58 C24 40 60 30 70 44 C76 54 70 64 80 60 C92 54 96 40 104 46 C110 52 100 66 112 62 C124 58 128 44 136 50 C142 56 138 66 150 62 C170 54 170 20 180 30 C186 40 170 64 186 62 C200 60 204 44 214 50 C222 56 216 66 228 62 C248 54 258 40 272 48 C284 56 290 60 310 52"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 4. PILLARS -->
+    <section class="pillars" id="pillars" aria-labelledby="pillars-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">01 — What I do</p>
+          <h2 class="h1 reveal-lines" id="pillars-title">Three ways <em>in.</em></h2>
+        </div>
+        <div class="pillars__stack">
+          <article class="pillar" style="--accent: var(--rose)">
+            <div class="pillar__top"><span class="label">01 — Studio</span><span class="pillar__dot"></span></div>
+            <h3 class="pillar__title">Visual Art &amp; <em>Illustration</em></h3>
+            <p class="pillar__copy">Drawings, paintings, sketches and digital illustration: personal work driven by emotion, nature and the human figure, made by hand and on screen.</p>
+            <div class="pillar__thumbs"><button data-open-work="After Frida" aria-label="Open After Frida"><img src="assets/work/frida-1-sm.webp" alt="" loading="lazy"></button><button data-open-work="Heritage Streets" aria-label="Open Heritage Streets"><img src="assets/work/heritage-1-sm.webp" alt="" loading="lazy"></button><button data-open-work="White on Black" aria-label="Open White on Black"><img src="assets/work/white-on-black-1-sm.webp" alt="" loading="lazy"></button></div>
+            <a href="#services" class="u-link pillar__more">Learn more →</a>
+          </article>
+          <article class="pillar" style="--accent: var(--terracotta)">
+            <div class="pillar__top"><span class="label">02 — Walls</span><span class="pillar__dot"></span></div>
+            <h3 class="pillar__title">Murals &amp; <em>Custom Art</em></h3>
+            <p class="pillar__copy">Large-scale walls and commissioned pieces for homes, schools, cafés and businesses. I turn your space and story into a finished artwork you'll live with every day.</p>
+            <div class="pillar__thumbs"><button data-open-work="Geometric Living Room Wall" aria-label="Open Geometric Living Room Wall mural"><img src="assets/work/geometric-living-room-1-sm.webp" alt="" loading="lazy"></button><button data-open-work="And Me Café" aria-label="Open And Me Café mural"><img src="assets/work/and-me-cafe-1-sm.webp" alt="" loading="lazy"></button><button data-open-work="Lotus Compound Wall" aria-label="Open Lotus Compound Wall mural"><img src="assets/work/compound-wall-1-sm.webp" alt="" loading="lazy"></button></div>
+            <a href="#services" class="u-link pillar__more">Learn more →</a>
+          </article>
+          <article class="pillar" style="--accent: var(--sage)">
+            <div class="pillar__top"><span class="label">03 — Classroom</span><span class="pillar__dot"></span></div>
+            <h3 class="pillar__title">Art Instruction &amp; <em>Education</em></h3>
+            <p class="pillar__copy">Drawing and painting classes, kids' programs and workshops. Patient, encouraging teaching that builds real skills and real confidence at any age.</p>
+            <div class="pillar__thumbs"><button data-open-work="Creative Painting for Kids" aria-label="Open Creative Painting for Kids"><img src="assets/work/kids-painting-1-sm.webp" alt="" loading="lazy"></button><button data-open-work="Creative Painting for Kids" aria-label="Open Creative Painting for Kids"><img src="assets/work/kids-painting-2-sm.webp" alt="" loading="lazy"></button><button data-open-work="Creative Painting for Kids" aria-label="Open Creative Painting for Kids"><img src="assets/work/kids-painting-4-sm.webp" alt="" loading="lazy"></button></div>
+            <a href="#services" class="u-link pillar__more">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. STORY -->
+    <section class="story" id="about" aria-labelledby="story-title">
+      <div class="wrap story__grid">
+        <div class="story__intro">
+          <p class="label">02 — About</p>
+          <h2 class="h2 reveal-lines" id="story-title">Trained in fine art. Fluent in pixels. <em>Happiest with paint on my hands.</em></h2>
+        </div>
+        <div class="story__text">
+          <div class="story__copy">
+            <p>I'm Prakruti, a visual artist working across drawing, painting, digital illustration and murals.</p>
+            <p>My foundation is a Bachelor's degree in Visual Arts. I went on to postgraduate studies in 3D Animation and Visual Effects at Seneca College, where I learned to think in light, form, and story as well as line and colour. Today my work moves easily between a sketchbook, a canvas, a screen and a wall.</p>
+            <p>For more than eight years I&rsquo;ve painted murals for caf&eacute;s, restaurants, offices, homes and IIM Ahmedabad, and hand-painted furniture, planters and bottles for private clients.</p>
+            <p>Along the way I found another love: teaching. As a Student Peer Mentor at Seneca, I supported a group of around ten students. I've also assisted children's art classes, helping young artists find the confidence to pick up a brush and trust their own ideas.</p>
+            <p>I'm now building my body of work and seeking murals, commissions, creative-studio roles and teaching opportunities. If you have a wall, a project, or a classroom in mind, I'd love to hear about it.</p>
+          </div>
+          <ol class="timeline">
+            <li><strong>Bachelor of Visual Arts</strong><span>Drawing, painting, art history, composition</span></li>
+            <li><strong>Postgraduate, 3D Animation &amp; VFX — Seneca College</strong><span>Modelling, sculpting, texturing, lighting, rendering &amp; life drawing</span></li>
+            <li><strong>Student Peer Mentor — Seneca College</strong><span>Supported a group of ~10 students</span></li>
+            <li><strong>Children's Art Classes</strong><span>Assisted drawing &amp; painting classes across age groups</span></li>
+            <li><strong>Now — Vancouver, Canada</strong><span>Murals, commissions, teaching &amp; creative-studio work</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6+7. SCENE 2 ORBIT → WEB STUDIO -->
+    <section class="studio film" id="web" data-film="2" data-theme="dark" aria-labelledby="web-title">
+      <div class="film__stage studio__stage">
+        <canvas class="film__canvas" role="img" aria-label="The camera orbits Prakruti at her studio desk and pushes into her monitor"></canvas>
+        <div class="film__ph studio__ph" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1"><span>Sketch</span></div>
+            <div class="orbit__ring orbit__ring--2"><span>Paint</span></div>
+            <div class="orbit__ring orbit__ring--3"><span>Design</span></div>
+          </div>
+          <div class="studio__glow"></div>
+          <div class="studio__desk"></div>
+        </div>
+
+        <div class="studio__captions" aria-hidden="true">
+          <span>Sketch.</span><span>Paint.</span><span>Design.</span><span><em>Build.</em></span>
+        </div>
+
+        <div class="studio__head wrap">
+          <p class="label">03 — Web Studio</p>
+          <h2 class="studio__title" id="web-title">Pages I've <em>built.</em></h2>
+          <p class="studio__sub">Five sites on the drawing board. Grab one, throw it, click to look inside.</p>
+        </div>
+
+        <!-- The glass browser -->
+        <div class="browser" data-browser>
+          <div class="browser__chrome">
+            <div class="browser__dots"><i></i><i></i><i></i></div>
+            <div class="browser__tabs" role="tablist" aria-label="Sites" data-tabs></div>
+            <div class="browser__tools">
+              <button class="tool" data-tool="zerog" aria-pressed="false">Zero-G</button>
+              <button class="tool" data-tool="shuffle">Shuffle</button>
+              <button class="tool" data-tool="tidy">Tidy</button>
+            </div>
+          </div>
+          <div class="browser__bar">
+            <span class="browser__nav" aria-hidden="true">‹ › ↻</span>
+            <div class="browser__url"><span class="browser__lock" aria-hidden="true">●</span><span data-url>prakruti.studio/desk</span><span class="caret" aria-hidden="true"></span></div>
+          </div>
+          <div class="browser__viewport" data-desk>
+            <div class="desk__grid" aria-hidden="true"></div>
+            <span class="desk__corner desk__corner--tl" aria-hidden="true"></span>
+            <span class="desk__corner desk__corner--tr" aria-hidden="true"></span>
+            <span class="desk__corner desk__corner--bl" aria-hidden="true"></span>
+            <span class="desk__corner desk__corner--br" aria-hidden="true"></span>
+            <div class="desk__hud label" aria-hidden="true">
+              <span>X <b data-hx>0000</b> / Y <b data-hy>0000</b></span>
+              <span><b data-count-sites>5</b> sites on desk</span>
+              <span class="desk__hint">drag · throw · click</span>
+            </div>
+            <div class="desk__cards" data-cards></div>
+            <div class="desk__coach" data-coach aria-hidden="true"><span class="desk__coach-hand"></span><span class="label">Grab a card &amp; throw it</span></div>
+
+            <div class="preview" data-preview role="dialog" aria-modal="false" aria-labelledby="preview-title" hidden>
+              <div class="preview__chrome">
+                <div class="browser__dots"><i></i><i></i><i></i></div>
+                <div class="preview__url"><span class="browser__lock" aria-hidden="true">●</span><span data-preview-url></span><span class="caret" aria-hidden="true"></span></div>
+                <span class="preview__scroll label" data-preview-progress>0%</span>
+              </div>
+              <div class="preview__body" data-preview-body data-lenis-prevent tabindex="0" aria-label="Scrollable site preview"></div>
+              <div class="preview__foot">
+                <div><strong id="preview-title" data-preview-title></strong> <span class="label" data-preview-meta></span></div>
+                <div class="preview__actions">
+                  <button class="btn btn--ghost btn--sm" data-preview-close>Close ✕</button>
+                  <a class="btn btn--primary btn--sm" data-preview-visit target="_blank" rel="noopener"><span>Visit this site ↗</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="browser__status label">
+            <span class="browser__load"><i></i></span>
+            <span>Secure · Vancouver, CA</span>
+            <span>100%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SERVICES -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">04 — Work With Me</p>
+          <h2 class="h1 reveal-lines" id="services-title">Let's make something <em>together.</em></h2>
+        </div>
+        <ul class="offers">
+          <li class="offer" data-enquiry="Commission" data-img="assets/work/dance-1-sm.webp">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">01</span>
+              <span class="offer__title">Commissions</span>
+              <span class="offer__for">Individuals &amp; collectors</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Original paintings, portraits and illustrations made for you.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+          <li class="offer" data-enquiry="Mural" data-img="assets/work/geometric-living-room-1-sm.webp">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">02</span>
+              <span class="offer__title">Murals</span>
+              <span class="offer__for">Homes, schools, cafés, businesses</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Large-scale walls designed around your space and story. On-site across Metro Vancouver.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+          <li class="offer" data-enquiry="Class or Workshop" data-img="assets/work/kids-painting-2-sm.webp">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">03</span>
+              <span class="offer__title">Classes &amp; Workshops</span>
+              <span class="offer__for">Kids, teens, adults, schools</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Drawing and painting sessions, one-off or ongoing, for community centres, schools and private groups.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+          <li class="offer" data-enquiry="Collaboration" data-img="assets/work/elephant-sculpt-1-sm.webp">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">04</span>
+              <span class="offer__title">Creative Collaboration</span>
+              <span class="offer__for">Studios &amp; teams</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Illustration, visual development, 3D/VFX support and artist-led web design.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="offer-preview" aria-hidden="true"><img src="assets/work/dance-1-sm.webp" alt=""></div>
+    </section>
+
+    <!-- 9. SELECTED WORK -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work__pin">
+        <div class="wrap work__head">
+          <div>
+            <p class="label">05 — Portfolio</p>
+            <h2 class="h1" id="work-title">Selected <em>Work</em><sup class="work__count" data-work-count>(33)</sup></h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter work" data-filters>
+            <button class="filter is-active" data-filter="all">All</button>
+            <button class="filter" data-filter="Drawing">Drawing</button>
+            <button class="filter" data-filter="Painting">Painting</button>
+            <button class="filter" data-filter="Digital">Digital</button>
+            <button class="filter" data-filter="Murals">Murals</button>
+            <button class="filter" data-filter="Custom">Custom</button>
+            <button class="filter" data-filter="3D/VFX">3D/VFX</button>
+            <button class="filter" data-filter="Teaching">Teaching</button>
+          </div>
+        </div>
+        <div class="work__track" data-track></div>
+      </div>
+    </section>
+
+    <!-- 9b. CANVAS SHOP — coming soon -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="wrap shop__grid">
+        <div class="shop__intro">
+          <p class="label">06 — Shop</p>
+          <h2 class="h1 reveal-lines" id="shop-title">The Canvas <em>Shop.</em></h2>
+          <p class="shop__lead">Something new is on the easel. A shop for my canvas paintings is coming soon.</p>
+          <form class="shop__notify" data-notify novalidate>
+            <label for="n-email" class="label">Be the first to know when it opens</label>
+            <div class="shop__field">
+              <input id="n-email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required>
+              <button class="btn btn--primary btn--sm magnetic" type="submit"><span>Notify me</span></button>
+            </div>
+            <p class="shop__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="shop__wall" aria-label="A glimpse of my canvas work">
+          <div class="shop__stamp" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="stamp-ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+              <text><textPath href="#stamp-ring" textLength="462">OPENING SOON ✦ THE CANVAS SHOP ✦ </textPath></text>
+            </svg>
+            <span>Coming<br><em>soon</em></span>
+          </div>
+          <figure class="canvas" style="--tilt:-2deg" data-open-work="Dance Series" data-cursor="View" role="button" tabindex="0" aria-label="View Dance Series">
+            <span class="canvas__art"><img src="assets/work/dance-1-sm.webp" alt="Painting of classical Indian dancers on a rainbow ground" loading="lazy" decoding="async"></span>
+            <figcaption class="canvas__tag"><strong>Dance Series</strong><span>Painting on canvas</span></figcaption>
+          </figure>
+          <figure class="canvas" style="--tilt:1.5deg" data-open-work="Sky Canvases" data-cursor="View" role="button" tabindex="0" aria-label="View Sky Canvases">
+            <span class="canvas__art"><img src="assets/work/sky-canvases-1-sm.webp" alt="Soft sunset painting on canvas" loading="lazy" decoding="async"></span>
+            <figcaption class="canvas__tag"><strong>Sky Canvases</strong><span>Painting on canvas</span></figcaption>
+          </figure>
+          <figure class="canvas" style="--tilt:-1deg" data-open-work="Small Canvases" data-cursor="View" role="button" tabindex="0" aria-label="View Small Canvases">
+            <span class="canvas__art"><img src="assets/work/mixed-media-4-sm.webp" alt="Textured painting of a red flower on a yellow canvas" loading="lazy" decoding="async"></span>
+            <figcaption class="canvas__tag"><strong>Small Canvases</strong><span>Mixed media on canvas</span></figcaption>
+          </figure>
+          <figure class="canvas" style="--tilt:2deg" data-open-work="Forest Stream" data-cursor="View" role="button" tabindex="0" aria-label="View Forest Stream">
+            <span class="canvas__art"><img src="assets/work/forest-stream-1-sm.webp" alt="Oil painting of a stream running through a forest" loading="lazy" decoding="async"></span>
+            <figcaption class="canvas__tag"><strong>Forest Stream</strong><span>Oil painting</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FINAL CTA — Scene 3 "The Wall" -->
+    <section class="finale film" id="contact" data-film="3" data-theme="dark" aria-labelledby="finale-title">
+      <div class="film__stage">
+        <canvas class="film__canvas" role="img" aria-label="Wide shot revealing a large finished botanical mural"></canvas>
+        <div class="film__ph finale__ph" aria-hidden="true">
+          <picture class="finale__photo">
+            <img src="assets/work/geometric-living-room-1.webp" alt="Prakruti's geometric mural in layered blues in a client's living room" decoding="async" loading="lazy">
+          </picture>
+        </div>
+        <div class="finale__shade" aria-hidden="true"></div>
+        <div class="finale__content wrap">
+          <p class="label">Idea → Creation → Finished work</p>
+          <h2 class="finale__title" id="finale-title">
+            <span class="line">Have a wall in mind?</span>
+            <span class="line"><em>Let's bring it to life.</em></span>
+          </h2>
+          <p class="finale__sub">Commissions, murals, classes and collaborations. Tell me what you're dreaming up.</p>
+          <div class="finale__ctas">
+            <a href="#enquire" class="btn btn--primary magnetic"><span>Work With Me</span></a>
+            <a href="#work" class="u-link u-link--light">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="enquire" id="enquire" aria-labelledby="enquire-title">
+      <div class="wrap enquire__grid">
+        <div class="enquire__intro">
+          <p class="label">07 — Contact</p>
+          <h2 class="h2" id="enquire-title">Start with a <em>hello.</em></h2>
+          <p>Fill this in and your email app will open with everything ready to send. Or reach me directly:</p>
+          <ul class="enquire__direct">
+            <li><button class="copy-email" data-copy="artethereal23@gmail.com" data-cursor="Copy"><span class="label">Email</span><span class="u-link">artethereal23@gmail.com</span></button></li>
+            <li><a href="https://www.linkedin.com/in/prakruti-patel-8780711b7" target="_blank" rel="noopener"><span class="label">LinkedIn</span><span class="u-link">prakruti-patel ↗</span></a></li>
+            <!-- <li><a href="https://instagram.com/…" target="_blank" rel="noopener"><span class="label">Instagram</span><span class="u-link">@handle ↗</span></a></li> -->
+            <li><span class="label">Based in</span><span>Vancouver, BC, Canada</span></li>
+          </ul>
+          <p class="enquire__note">On-site murals and classes across Metro Vancouver. Commissions and digital work worldwide.</p>
+        </div>
+
+        <form class="form" data-form novalidate>
+          <div class="field">
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required>
+            <label for="f-name">Your name</label>
+          </div>
+          <div class="field">
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder=" " required>
+            <label for="f-email">Your email</label>
+          </div>
+          <fieldset class="chips">
+            <legend class="label">I'm interested in</legend>
+            <label><input type="radio" name="type" value="Commission" checked><span>Commission</span></label>
+            <label><input type="radio" name="type" value="Mural"><span>Mural</span></label>
+            <label><input type="radio" name="type" value="Class or Workshop"><span>Class / Workshop</span></label>
+            <label><input type="radio" name="type" value="Collaboration"><span>Collaboration</span></label>
+            <label><input type="radio" name="type" value="Other"><span>Other</span></label>
+          </fieldset>
+          <div class="field">
+            <input id="f-budget" name="budget" type="text" placeholder=" ">
+            <label for="f-budget">Budget / timeline (optional)</label>
+          </div>
+          <div class="field">
+            <textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="f-msg">Tell me about your idea</label>
+          </div>
+          <button type="submit" class="btn btn--primary magnetic form__submit"><span>Open email &amp; send</span></button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" data-theme="dark">
+    <div class="wrap footer__cols">
+      <div>
+        <p class="label">Navigate</p>
+        <a href="#work" class="u-link">Work</a><a href="#web" class="u-link">Web</a><a href="#about" class="u-link">About</a><a href="#services" class="u-link">Services</a><a href="#shop" class="u-link">Shop (soon)</a><a href="#enquire" class="u-link">Contact</a>
+      </div>
+      <div>
+        <p class="label">Connect</p>
+        <a href="mailto:artethereal23@gmail.com" class="u-link">artethereal23@gmail.com</a>
+        <a href="https://www.linkedin.com/in/prakruti-patel-8780711b7" target="_blank" rel="noopener" class="u-link">LinkedIn ↗</a>
+      </div>
+      <div>
+        <p class="label">Availability</p>
+        <p>Vancouver, Canada. Open to murals, commissions &amp; teaching, 2026.</p>
+      </div>
+    </div>
+    <div class="footer__word" aria-hidden="true"><span>Prakruti Patel</span></div>
+    <div class="wrap footer__base label">
+      <span>© 2026 Prakruti Patel. All artwork © the artist.</span>
+      <span>Vancouver — <span data-clock>--:--</span> PT</span>
+      <a href="#top" class="u-link" data-top>Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+    <button class="lightbox__close" data-lb-close aria-label="Close">Close ✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" data-lb-prev aria-label="Previous">←</button>
+    <figure class="lightbox__figure"><div class="lightbox__art" data-lb-art></div><figcaption data-lb-cap></figcaption><div class="lightbox__strip" data-lb-strip></div></figure>
+    <button class="lightbox__nav lightbox__nav--next" data-lb-next aria-label="Next">→</button>
+  </div>
+
+  <div class="toast label" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
