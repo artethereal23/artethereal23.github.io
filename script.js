@@ -63,6 +63,10 @@
   // assets/video/scene-N.mp4 (or frame sequences to assets/seq/) — otherwise no files are requested.
   const USE_FILM_MEDIA = false;
 
+  // Categories kept in WORKS but left out of the public portfolio gallery (the site is art-first).
+  // Teaching projects can still be opened from elsewhere with data-open-work.
+  const HIDDEN_CATEGORIES = ['3D/VFX', 'Teaching'];
+
   /* ------------------------------------------------------------------------
      Helpers & environment
      ------------------------------------------------------------------------ */
@@ -1001,6 +1005,7 @@
      ------------------------------------------------------------------------ */
   function initStudio() {
     const section = $('.studio');
+    if (!section) return; // Web Studio is kept in the code but not shown on the public site
     const film = new Film(section, 2, studioPlaceholder());
     const desk = new Desk(section);
     const browser = $('[data-browser]', section);
@@ -1086,6 +1091,7 @@
   function initGallery() {
     const track = $('[data-track]');
     track.innerHTML = WORKS.map((w, i) => {
+      if (HIDDEN_CATEGORIES.includes(w.category)) return ''; // kept in data, not shown in the gallery
       const cover = w.images[0];
       const ar = clamp(cover.w / cover.h, 0.62, 1.6).toFixed(3);
       const n = w.images.length, vids = w.images.some(x => x.video);
