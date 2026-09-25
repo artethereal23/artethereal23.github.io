@@ -25,7 +25,7 @@
   --serif: "Instrument Serif", "Times New Roman", serif;
   --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", ui-monospace, monospace;
-  --fs-hero: clamp(56px, 10.6vw, 210px);
+  --fs-hero: clamp(46px, 7.2vw, 150px);
   --fs-h1: clamp(48px, 8vw, 150px);
   --fs-h2: clamp(36px, 4.6vw, 80px);
   --fs-manifesto: clamp(30px, 4.4vw, 76px);
@@ -716,6 +716,59 @@ em { font-style: italic; }
 .art-item.is-hidden { display: none; }
 
 /* ==========================================================================
+   SELECTED WORK — curated grid right after the hero
+   ========================================================================== */
+.selected { padding-block: clamp(80px, 12vh, 160px) clamp(64px, 10vh, 120px); background: var(--cream); }
+.selected__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px 48px; flex-wrap: wrap; margin-bottom: clamp(32px, 5vh, 56px); }
+.selected__head .label { margin-bottom: 18px; }
+.selected__intro { max-width: 40ch; color: var(--graphite); font-size: var(--fs-lead); line-height: 1.5; }
+.selected__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: clamp(170px, 19vw, 320px); gap: clamp(12px, 1.4vw, 20px); }
+.sel { position: relative; overflow: hidden; background: var(--beige); text-align: left; }
+.sel--feature { grid-column: span 2; grid-row: span 2; }
+.sel--wide { grid-column: span 2; }
+.sel img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease), filter .6s; }
+.sel:hover img { transform: scale(1.045); }
+.sel__cap {
+  position: absolute; left: 0; right: 0; bottom: 0; display: grid; gap: 4px; padding: 40px 16px 14px;
+  background: linear-gradient(to top, rgba(20, 17, 15, .72), transparent); color: var(--paper);
+}
+.sel__cap .label { color: rgba(251, 248, 243, .75); font-size: 10px; }
+.sel__cap strong { font: 400 clamp(18px, 1.6vw, 26px)/1.1 var(--serif); }
+.sel--feature .sel__cap strong { font-size: clamp(24px, 2.4vw, 38px); }
+.sel:focus-visible { outline-offset: 4px; }
+.selected__more { margin-top: 28px; font-weight: 600; }
+
+/* ==========================================================================
+   MURALS & CLIENT PROJECTS
+   ========================================================================== */
+.murals { padding-block: var(--section); border-top: 1px solid var(--hair); }
+.murals__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px 48px; flex-wrap: wrap; margin-bottom: clamp(40px, 6vh, 72px); }
+.murals__head .label { margin-bottom: 18px; }
+.murals__intro { max-width: 46ch; color: var(--graphite); font-size: var(--fs-lead); line-height: 1.5; }
+.murals__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(36px, 5vw, 72px) clamp(20px, 3vw, 44px); }
+.proj { display: grid; gap: 18px; align-content: start; }
+.proj__media { position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--beige); box-shadow: 0 24px 50px -32px rgba(28, 26, 24, .5); }
+.proj__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.proj__media:hover img { transform: scale(1.04); }
+.proj__count { position: absolute; right: 12px; bottom: 12px; padding: 6px 10px; border-radius: 999px; background: rgba(28, 26, 24, .72); color: var(--paper); font-size: 10px; }
+.proj__body { display: grid; gap: 8px; }
+.proj__body h3 { margin: 0; font: 400 clamp(26px, 2.4vw, 38px)/1.05 var(--serif); letter-spacing: -.01em; }
+.proj__body p { margin: 0; max-width: 52ch; color: var(--graphite); }
+.murals__grid .proj:nth-child(even) { margin-top: clamp(0px, 6vw, 90px); }
+
+/* ==========================================================================
+   ART & EDUCATION — concise
+   ========================================================================== */
+.education { padding-block: clamp(72px, 12vh, 150px); border-top: 1px solid var(--hair); }
+.education__grid { display: grid; grid-template-columns: 5fr 6fr; gap: clamp(32px, 6vw, 110px); align-items: start; }
+.education__intro { display: grid; gap: 20px; }
+.education__intro p:not(.label) { max-width: 44ch; color: var(--graphite); font-size: var(--fs-lead); line-height: 1.5; }
+.education__list { display: grid; border-top: 1px solid var(--hair); }
+.education__list li { display: grid; gap: 6px; padding: 26px 0; border-bottom: 1px solid var(--hair); }
+.education__list h3 { margin: 0; font: 400 clamp(26px, 2.4vw, 38px)/1.05 var(--serif); }
+.education__list p { margin: 0; color: var(--graphite); }
+
+/* ==========================================================================
    CANVAS SHOP — coming soon
    ========================================================================== */
 .shop { padding-block: var(--section); border-top: 1px solid var(--hair); background: var(--cream); overflow: clip; }
@@ -919,6 +972,7 @@ em { font-style: italic; }
   .story__intro { position: relative; top: 0; margin-bottom: 40px; }
   .enquire__grid { grid-template-columns: 1fr; }
   .shop__grid { grid-template-columns: 1fr; }
+  .education__grid { grid-template-columns: 1fr; }
   .shop__intro { position: relative; top: 0; padding-top: 0; }
   .offer__row { grid-template-columns: 44px 1fr 40px; }
   .offer__for { display: none; }
@@ -938,7 +992,7 @@ em { font-style: italic; }
   .nav__menu { display: block; }
   .hero__drawing { right: 50%; transform: translate(50%, -44%); height: 70%; opacity: .2; }
   .hero__content { padding-bottom: 72px; }
-  .hero__title { font-size: clamp(50px, 15vw, 90px); }
+  .hero__title { font-size: clamp(38px, 11vw, 64px); }
   .hero__bottom { flex-direction: column; align-items: flex-start; gap: 24px; }
   .hero__meta span:last-child { display: none; }
   .stats__grid { grid-template-columns: 1fr 1fr; }
@@ -977,6 +1031,10 @@ em { font-style: italic; }
   .finale__ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
   .footer__cols { grid-template-columns: 1fr; }
   .shop__list li { grid-template-columns: 1fr; gap: 4px; }
+  .selected__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 44vw; }
+  .sel__cap { padding: 30px 10px 10px; }
+  .murals__grid { grid-template-columns: 1fr; }
+  .murals__grid .proj:nth-child(even) { margin-top: 0; }
   .site-card__label span { display: none; }
   .bp-chip { top: 6px; right: 6px; padding: 3px 6px; font-size: 7px; }
   .shop__field { flex-direction: column; }
