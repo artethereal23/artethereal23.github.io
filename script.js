@@ -1044,8 +1044,6 @@
      ------------------------------------------------------------------------ */
   function initServices() {
     const offers = $$('.offer');
-    const preview = $('.offer-preview');
-    const art = $('img', preview);
     offers.forEach(o => {
       const row = $('.offer__row', o);
       row.addEventListener('click', () => {
@@ -1054,22 +1052,7 @@
         if (open) { o.classList.add('is-open'); row.setAttribute('aria-expanded', 'true'); }
       });
       $('[data-enquire]', o).addEventListener('click', () => setEnquiry(o.dataset.enquiry));
-      if (finePointer) {
-        o.addEventListener('mouseenter', () => { art.src = o.dataset.img; preview.classList.add('is-on'); });
-        o.addEventListener('mouseleave', () => preview.classList.remove('is-on'));
-      }
     });
-    if (finePointer && hasGSAP) {
-      const xTo = gsap.quickTo(preview, 'x', { duration: 0.6, ease: 'power3' });
-      const yTo = gsap.quickTo(preview, 'y', { duration: 0.6, ease: 'power3' });
-      const rTo = gsap.quickTo(preview, 'rotation', { duration: 0.8, ease: 'power3' });
-      let lastX = 0;
-      $('.offers').addEventListener('mousemove', e => {
-        xTo(e.clientX + 30); yTo(e.clientY - 140);
-        rTo(clamp((e.clientX - lastX) * 0.6, -12, 12));
-        lastX = e.clientX;
-      });
-    }
   }
 
   function setEnquiry(value) {
@@ -1485,7 +1468,16 @@
     initThemeTriggers();
 
     const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
-    fonts.then(() => { initTextReveals(); hasGSAP && ScrollTrigger.refresh(); });
+    // Triggers are measured in creation order, but the gallery's pin is created inside matchMedia after
+    // the finale's. Re-order them by where their element sits in the page (top to bottom) so each one is
+    // measured after the pinned sections above it; otherwise the finale lands ~one gallery-length too early.
+    const sortByPage = () => ScrollTrigger.sort((a, b) => {
+      const ea = a.pin || a.trigger, eb = b.pin || b.trigger;
+      if (!ea || !eb) return ea ? -1 : eb ? 1 : 0;
+      return ea.compareDocumentPosition(eb) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
+    });
+    if (hasGSAP) { sortByPage(); ScrollTrigger.refresh(); }
+    fonts.then(() => { initTextReveals(); if (hasGSAP) { sortByPage(); ScrollTrigger.refresh(); } });
 
     initPreloader(() => {
       hero.intro();
