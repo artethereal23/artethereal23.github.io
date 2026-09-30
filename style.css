@@ -903,7 +903,8 @@ em { font-style: italic; }
 .footer__cols p:not(.label) { color: rgba(248, 249, 250, .75); max-width: 30ch; }
 .footer__word { overflow: hidden; margin-top: 8vh; line-height: .8; }
 .footer__word span { display: block; text-align: center; white-space: nowrap; font: 400 20.5vw/.86 var(--serif); letter-spacing: -.04em; }
-.footer__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 26px 30px; border-top: 1px solid var(--hair-light); }
+.footer__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 26px 0; border-top: 1px solid var(--hair-light); }
+.footer__legal { max-width: 1600px; padding-top: 18px; padding-bottom: 28px; font: 400 11px/1.6 var(--sans); letter-spacing: .01em; color: rgba(248, 249, 250, .62); text-wrap: pretty; }
 
 /* ==========================================================================
    LIGHTBOX & TOAST
