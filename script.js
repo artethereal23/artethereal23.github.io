@@ -13,6 +13,14 @@
   // images[0] is the cover. To add work: export images into assets/work/ and add an entry here.
   const WORKS = [
     {title:"Geometric Living Room Wall",category:"Murals",medium:"Acrylic on interior wall · Client home",year:"2019",desc:"A geometric mural in layered blues that I designed and painted for a client’s living room: taped out, painted by hand, and finished around the room’s furniture and fittings.",images:[{src:"assets/work/geometric-living-room-1.webp",sm:"assets/work/geometric-living-room-1-sm.webp",w:2000,h:1500},{src:"assets/work/geometric-living-room-2.webp",sm:"assets/work/geometric-living-room-2-sm.webp",w:2000,h:1500},{src:"assets/work/geometric-living-room-3.webp",sm:"assets/work/geometric-living-room-3-sm.webp",w:2000,h:1500},{src:"assets/work/geometric-living-room-4.webp",sm:"assets/work/geometric-living-room-4-sm.webp",w:2000,h:1500},{src:"assets/work/geometric-living-room-5.webp",sm:"assets/work/geometric-living-room-5-sm.webp",w:2000,h:1500}]},
+    {title:"She Blooms at Night",category:"Painting",tag:"Recent",medium:"Mixed media: acrylic & oil pastel on canvas · 11″ × 14″",year:"2026",desc:"",images:[{src:"assets/work/recent-she-blooms-at-night.webp",sm:"assets/work/recent-she-blooms-at-night-sm.webp",w:1092,h:1408}]},
+    {title:"Blooming Stillness",category:"Painting",tag:"Recent",medium:"Mixed media: acrylic & oil pastel on canvas · 12″ × 16″",year:"2026",desc:"",images:[{src:"assets/work/recent-blooming-stillness.webp",sm:"assets/work/recent-blooming-stillness-sm.webp",w:1146,h:896}]},
+    {title:"Co-Exist",category:"Painting",medium:"Acrylic on canvas · 8″ × 10″",year:"2026",desc:"",images:[{src:"assets/work/recent-co-exist.webp",sm:"assets/work/recent-co-exist-sm.webp",w:1086,h:1328}]},
+    {title:"Spring in Bloom",category:"Painting",medium:"Acrylic on canvas · 16″ × 20″",year:"2025",desc:"",images:[{src:"assets/work/recent-spring-in-bloom.webp",sm:"assets/work/recent-spring-in-bloom-sm.webp",w:1056,h:1320}]},
+    {title:"Tropical Leaves",category:"Painting",medium:"Acrylic on canvas · 20″ × 24″",year:"2025",desc:"",images:[{src:"assets/work/recent-tropical-leaves.webp",sm:"assets/work/recent-tropical-leaves-sm.webp",w:1099,h:1312}]},
+    {title:"Krishna",category:"Painting",medium:"Acrylic on canvas · 5″ × 7″",year:"2025",desc:"",images:[{src:"assets/work/recent-krishna.webp",sm:"assets/work/recent-krishna-sm.webp",w:1336,h:962}]},
+    {title:"Golden Moonlight",category:"Painting",medium:"Acrylic on canvas · 16″ × 20″",year:"2024",desc:"",images:[{src:"assets/work/recent-golden-moonlight.webp",sm:"assets/work/recent-golden-moonlight-sm.webp",w:1032,h:1328}]},
+    {title:"Lotus Garden",category:"Painting",medium:"Acrylic on canvas · 16″ × 20″",year:"2024",desc:"",images:[{src:"assets/work/recent-lotus-garden.webp",sm:"assets/work/recent-lotus-garden-sm.webp",w:1042,h:1296}]},
     {title:"And Me Café",category:"Murals",medium:"Acrylic on interior walls · Solo mural artist",year:"2018",desc:"Client: And Me Café. I independently painted several large-scale murals across the café, from layout and preparation through to the finished walls, designed to match the character of the space.",images:[{src:"assets/work/and-me-cafe-1.webp",sm:"assets/work/and-me-cafe-1-sm.webp",w:1080,h:1616},{src:"assets/work/and-me-cafe-2.webp",sm:"assets/work/and-me-cafe-2-sm.webp",w:1152,h:648},{src:"assets/work/and-me-cafe-3.webp",sm:"assets/work/and-me-cafe-3-sm.webp",w:1500,h:2000},{src:"assets/work/and-me-cafe-4.webp",sm:"assets/work/and-me-cafe-4-sm.webp",w:982,h:2000},{src:"assets/work/and-me-cafe-5.webp",sm:"assets/work/and-me-cafe-5-sm.webp",w:710,h:1027},{src:"assets/work/and-me-cafe-6.webp",sm:"assets/work/and-me-cafe-6-sm.webp",w:1616,h:1080},{src:"assets/work/and-me-cafe-7.webp",sm:"assets/work/and-me-cafe-7-sm.webp",w:921,h:1378},{src:"assets/work/and-me-cafe-8.webp",sm:"assets/work/and-me-cafe-8-sm.webp",w:1568,h:1048},{src:"assets/work/and-me-cafe-9.webp",sm:"assets/work/and-me-cafe-9-sm.webp",w:1080,h:1616},{src:"assets/work/and-me-cafe-10.webp",sm:"assets/work/and-me-cafe-10-sm.webp",w:1080,h:1616},{src:"assets/work/and-me-cafe-11.webp",sm:"assets/work/and-me-cafe-11-sm.webp",w:1616,h:1080}]},
     {title:"Lotus Compound Wall",category:"Murals",medium:"Acrylic on exterior wall",year:"2020",desc:"A very large outdoor mural painted on the compound wall of a client’s home: chalk layout, blocked-in lotus forms, then layered detail. The photos with me beside it show the scale.",images:[{src:"assets/work/compound-wall-1.webp",sm:"assets/work/compound-wall-1-sm.webp",w:2000,h:944},{src:"assets/work/compound-wall-2.webp",sm:"assets/work/compound-wall-2-sm.webp",w:1152,h:544},{src:"assets/work/compound-wall-3.webp",sm:"assets/work/compound-wall-3-sm.webp",w:2000,h:944},{src:"assets/work/compound-wall-4.webp",sm:"assets/work/compound-wall-4-sm.webp",w:768,h:1024},{src:"assets/work/compound-wall-5.webp",sm:"assets/work/compound-wall-5-sm.webp",w:768,h:1024},{src:"assets/work/compound-wall-6.webp",sm:"assets/work/compound-wall-6-sm.webp",w:944,h:2000},{src:"assets/work/compound-wall-7.webp",sm:"assets/work/compound-wall-7-sm.webp",w:2000,h:944}]},
     {title:"Desert Sunset, Smokin Pizza",category:"Murals",medium:"Acrylic wall painting",year:"",desc:"An acrylic wall painting for the Smokin Pizza store, painted directly on the interior wall to give the space a warm, distinctive focal point.",images:[{src:"assets/work/smokin-pizza-1.webp",sm:"assets/work/smokin-pizza-1-sm.webp",w:1080,h:1592},{src:"assets/work/smokin-pizza-2.webp",sm:"assets/work/smokin-pizza-2-sm.webp",w:653,h:1160},{src:"assets/work/smokin-pizza-3.webp",sm:"assets/work/smokin-pizza-3-sm.webp",w:653,h:1160},{src:"assets/work/smokin-pizza-4.webp",sm:"assets/work/smokin-pizza-4-sm.webp",w:653,h:1160},{src:"assets/work/smokin-pizza-5.webp",sm:"assets/work/smokin-pizza-5-sm.webp",w:653,h:1160},{src:"assets/work/smokin-pizza-6.webp",sm:"assets/work/smokin-pizza-6-sm.webp",w:653,h:1160},{src:"assets/work/smokin-pizza-7.webp",sm:"assets/work/smokin-pizza-7-sm.webp",w:1125,h:2000}]},
@@ -91,7 +99,6 @@
 
   let lenis = null;
   let studioTrigger = null;
-  let workTrigger = null;
 
   /* ------------------------------------------------------------------------
      Smooth scroll
@@ -319,7 +326,7 @@
     img.loading = 'eager';
     return p => {
       const t = easeOut(p);
-      img.style.transform = `scale(${lerp(1.55, 1.04, t)}) translateY(${lerp(4, 0, t)}%)`;
+      img.style.transform = `scale(${lerp(1.25, 1, t)}) translateY(${lerp(3, 0, t)}%)`;
       img.style.filter = `saturate(${lerp(0.75, 1.05, t)})`;
     };
   }
@@ -1079,7 +1086,7 @@
       const cover = w.images[0];
       const ar = clamp(cover.w / cover.h, 0.62, 1.6).toFixed(3);
       const n = w.images.length, vids = w.images.some(x => x.video);
-      const badge = vids ? 'Video' : n > 1 ? `${n} photos` : '';
+      const badge = w.tag || (vids ? 'Video' : n > 1 ? `${n} photos` : '');
       return `
       <button class="art-item" data-cat="${w.category}" data-i="${i}" data-cursor="View" style="--ar:${ar}" aria-label="View ${esc(w.title)}: ${esc(w.medium)}">
         <span class="art-item__frame">${mediaMarkup(cover, w)}${badge ? `<span class="art-item__badge">${badge}</span>` : ''}</span>
@@ -1088,39 +1095,63 @@
     }).join('');
 
     const items = $$('.art-item', track);
+    const moreBtn = $('[data-more]');
+    const moreWrap = moreBtn.parentElement;
+    const firstSet = () => innerWidth < 768 ? 6 : 9; // a curated first wall; the rest is the viewer's choice
+    let filter = 'all', expanded = false, cols = 0;
+
+    const inFilter = it => filter === 'all' || it.dataset.cat === filter;
+    const colCount = () => innerWidth < 1100 ? 2 : 3;
+
+    // gallery wall: each piece keeps its true proportions and drops into the shortest column
+    function layout() {
+      cols = colCount();
+      const pool = items.filter(inFilter);
+      const shown = expanded ? pool : pool.slice(0, firstSet());
+      items.forEach(it => it.classList.toggle('is-hidden', !inFilter(it)));
+      const colEls = Array.from({ length: cols }, () => { const c = document.createElement('div'); c.className = 'work__col'; return c; });
+      const heights = new Array(cols).fill(0);
+      shown.forEach(it => {
+        const k = heights.indexOf(Math.min(...heights));
+        colEls[k].appendChild(it);
+        heights[k] += 1 / parseFloat(it.style.getPropertyValue('--ar')) + 0.28; // image + wall label
+      });
+      track.replaceChildren(...colEls);
+      const extra = pool.length > firstSet();
+      moreWrap.hidden = !extra;
+      moreBtn.setAttribute('aria-expanded', expanded);
+      $('span', moreBtn).textContent = expanded ? 'Show less' : 'Show more work';
+      if (hasGSAP) ScrollTrigger.refresh();
+      return shown;
+    }
+
+    const reveal = els => { if (ANIM && els.length) gsap.fromTo(els, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.9, stagger: 0.05, ease: 'expo.out', clearProps: 'transform' }); };
+    const scrollToWork = () => { const y = $('#work').getBoundingClientRect().top + scrollY - 20; lenis ? lenis.scrollTo(y, { duration: 1.1 }) : scrollTo({ top: y, behavior: 'smooth' }); };
+
+    layout();
 
     $$('[data-filter]').forEach(btn => btn.addEventListener('click', () => {
+      if (btn.dataset.filter === filter) return;
       $$('[data-filter]').forEach(b => b.classList.toggle('is-active', b === btn));
-      const f = btn.dataset.filter;
-      const apply = () => {
-        items.forEach(it => it.classList.toggle('is-hidden', f !== 'all' && it.dataset.cat !== f));
-
-        if (hasGSAP) {
-          ScrollTrigger.refresh();
-          // the pinned distance changed: stay at the start of the gallery
-          if (workTrigger) lenis ? lenis.scrollTo(workTrigger.start, { immediate: true }) : scrollTo(0, workTrigger.start);
-        }
-      };
-      if (!ANIM) return apply();
-      gsap.to(items, {
-        opacity: 0, y: 20, duration: 0.3, stagger: 0.01, onComplete: () => {
-          apply();
-          gsap.fromTo(items.filter(it => !it.classList.contains('is-hidden')), { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.04, ease: 'expo.out' });
-        }
-      });
+      const go = () => { filter = btn.dataset.filter; expanded = false; reveal(layout()); };
+      if (!ANIM) return go();
+      gsap.to($$('.art-item', track), { opacity: 0, y: 16, duration: 0.25, stagger: 0.01, onComplete: go });
     }));
 
+    moreBtn.addEventListener('click', () => {
+      const before = new Set($$('.art-item', track));
+      expanded = !expanded;
+      const shown = layout();
+      if (expanded) reveal(shown.filter(it => !before.has(it)));
+      else scrollToWork();
+    });
+
+    let rt;
+    addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (colCount() !== cols) layout(); }, 150); });
+
     if (ANIM) {
-      gsap.matchMedia().add('(min-width: 768px)', () => {
-        const dist = () => Math.max(0, track.scrollWidth - innerWidth);
-        const tween = gsap.to(track, {
-          x: () => -dist(), ease: 'none',
-          scrollTrigger: { trigger: '.work', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true }
-        });
-        workTrigger = tween.scrollTrigger;
-        return () => { workTrigger = null; };
-      });
       gsap.from('.work__head > *', { y: 40, opacity: 0, stagger: 0.1, duration: 1.1, ease: 'expo.out', scrollTrigger: { trigger: '.work', start: 'top 75%' } });
+      gsap.from($$('.art-item', track), { y: 50, opacity: 0, stagger: 0.06, duration: 1.1, ease: 'expo.out', clearProps: 'transform', scrollTrigger: { trigger: track, start: 'top 85%' } });
     }
 
     // lightbox: one project at a time, with a thumbnail strip for its photos (before → process → finished)
@@ -1188,18 +1219,19 @@
 
     gsap.set(inners, { yPercent: 115 });
     gsap.set(['.finale__content .label', '.finale__sub', '.finale__ctas'], { opacity: 0, y: 24 });
+    gsap.set('.finale__shade', { opacity: 1 });
+    // the words arrive as soon as the section comes into view, no long scroll needed
+    gsap.timeline({ scrollTrigger: { trigger: section, start: 'top 55%', toggleActions: 'play none none reverse' } })
+      .to('.finale__content .label', { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, 0)
+      .to(inners, { yPercent: 0, duration: 1, stagger: 0.12, ease: 'expo.out' }, 0.1)
+      .to(['.finale__sub', '.finale__ctas'], { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: 'power2.out' }, 0.4);
+    // the camera settles on the finished wall as the section scrolls in, then a short hold
     const proxy = { p: 0 };
-    const tl = gsap.timeline({ defaults: { ease: 'none' } })
-      .to(proxy, { p: 1, duration: 0.85, onUpdate: () => film.setProgress(proxy.p) }, 0)
-      .to('.finale__shade', { opacity: 1, duration: 0.2 }, 0.5)
-      .to('.finale__content .label', { opacity: 1, y: 0, duration: 0.08, ease: 'power2.out' }, 0.6)
-      .to(inners, { yPercent: 0, duration: 0.14, stagger: 0.05, ease: 'power3.out' }, 0.62)
-      .to(['.finale__sub', '.finale__ctas'], { opacity: 1, y: 0, duration: 0.1, stagger: 0.04, ease: 'power2.out' }, 0.8)
-      .add(() => {}, 1);
     ScrollTrigger.create({
-      trigger: section, start: 'top top', end: () => '+=' + innerHeight * (isMobile() ? 1.5 : 2.2),
-      pin: true, scrub: 1, animation: tl
+      trigger: section, start: 'top bottom', end: 'top top',
+      scrub: 1, onUpdate: self => { proxy.p = self.progress; film.setProgress(proxy.p); }
     });
+    ScrollTrigger.create({ trigger: section, start: 'top top', end: () => '+=' + innerHeight * (isMobile() ? 0.3 : 0.6), pin: true });
   }
 
   /* ------------------------------------------------------------------------
@@ -1266,62 +1298,11 @@
         </span>`;
     });
 
-    // paintings open in the project viewer from the keyboard too
-    $$('.shop .canvas').forEach(c => c.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.click(); }
-    }));
-
     if (!ANIM) return;
-    gsap.from('.shop .canvas', {
-      y: 60, opacity: 0, duration: 1.2, stagger: 0.12, ease: 'expo.out', clearProps: 'transform,opacity',
-      scrollTrigger: { trigger: '.shop__wall', start: 'top 80%' }
-    });
-    gsap.from('.shop__stamp', {
-      scale: 0.4, opacity: 0, rotate: -90, duration: 1.2, ease: 'back.out(1.6)', clearProps: 'transform,opacity',
-      scrollTrigger: { trigger: '.shop__wall', start: 'top 70%' }
-    });
     gsap.from('.shop__lead, .shop__notify', {
       y: 24, opacity: 0, stagger: 0.1, duration: 1, ease: 'expo.out',
       scrollTrigger: { trigger: '.shop__lead', start: 'top 85%' }
     });
-
-    // "Coming soon" stamp: slow spin that speeds up while hovered
-    const stamp = $('.shop__stamp');
-    const spin = gsap.to($('svg', stamp), { rotation: 360, duration: 24, repeat: -1, ease: 'none', transformOrigin: '50% 50%' });
-    stamp.addEventListener('mouseenter', () => gsap.to(spin, { timeScale: 6, duration: 0.6 }));
-    stamp.addEventListener('mouseleave', () => gsap.to(spin, { timeScale: 1, duration: 1.2 }));
-
-    if (!finePointer) return;
-    // the wall: a warm spotlight follows the cursor, and the hanging paintings swing
-    // on their wire when the cursor sweeps past (a damped spring per painting)
-    const wall = $('.shop__wall');
-    const frames = $$('.canvas', wall).map(el => ({ el, a: 0, v: 0 }));
-    let lastX = null, running = false;
-    const tick = () => {
-      let moving = false;
-      frames.forEach(f => {
-        f.v += -f.a * 0.05; f.v *= 0.92; f.a = clamp(f.a + f.v, -7, 7);
-        if (Math.abs(f.a) > 0.02 || Math.abs(f.v) > 0.02) moving = true;
-        f.el.style.setProperty('--swing', `${f.a.toFixed(3)}deg`);
-      });
-      if (moving) requestAnimationFrame(tick); else running = false;
-    };
-    wall.addEventListener('pointermove', e => {
-      const r = wall.getBoundingClientRect();
-      wall.style.setProperty('--mx', `${e.clientX - r.left}px`);
-      wall.style.setProperty('--my', `${e.clientY - r.top}px`);
-      if (lastX != null) {
-        const dx = clamp(e.clientX - lastX, -40, 40);
-        frames.forEach(f => {
-          const fr = f.el.getBoundingClientRect();
-          const near = Math.max(0, 1 - Math.abs(e.clientX - (fr.left + fr.width / 2)) / 420);
-          f.v += dx * 0.012 * near;
-        });
-        if (!running) { running = true; requestAnimationFrame(tick); }
-      }
-      lastX = e.clientX;
-    });
-    wall.addEventListener('pointerleave', () => { lastX = null; });
   }
 
   function toast(msg) {
@@ -1330,6 +1311,17 @@
     t.classList.add('is-on');
     clearTimeout(t._t);
     t._t = setTimeout(() => t.classList.remove('is-on'), 2200);
+  }
+
+  // artwork protection: no right-click saving or dragging of images, with a polite notice instead
+  function initProtect() {
+    const isArt = el => el.closest('img, picture, .art-item, .proj__media, .lightbox, .finale__photo, .selected, .story__photo');
+    document.addEventListener('contextmenu', e => {
+      if (!isArt(e.target)) return;
+      e.preventDefault();
+      toast('All artwork © Prakruti Patel');
+    });
+    document.addEventListener('dragstart', e => { if (e.target.tagName === 'IMG') e.preventDefault(); });
   }
 
   function initCopy() {
@@ -1452,6 +1444,7 @@
     initClock();
     initVisibility();
     initCopy();
+    initProtect();
     const hero = initHero();
     initStats();
     initPillars();
@@ -1470,9 +1463,12 @@
     // Triggers are measured in creation order, but the gallery's pin is created inside matchMedia after
     // the finale's. Re-order them by where their element sits in the page (top to bottom) so each one is
     // measured after the pinned sections above it; otherwise the finale lands ~one gallery-length too early.
+    // a trigger on a pin-spacer belongs to the section inside it; for the same section the pin goes first
+    const node = t => { const e = t.pin || t.trigger; return e && e.classList.contains('pin-spacer') ? e.firstElementChild : e; };
     const sortByPage = () => ScrollTrigger.sort((a, b) => {
-      const ea = a.pin || a.trigger, eb = b.pin || b.trigger;
+      const ea = node(a), eb = node(b);
       if (!ea || !eb) return ea ? -1 : eb ? 1 : 0;
+      if (ea === eb) return (b.pin ? 1 : 0) - (a.pin ? 1 : 0);
       return ea.compareDocumentPosition(eb) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
     });
     if (hasGSAP) { sortByPage(); ScrollTrigger.refresh(); }

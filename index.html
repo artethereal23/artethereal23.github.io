@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prakruti Patel — Visual Artist, Muralist &amp; Art Educator</title>
+  <meta name="robots" content="noai, noimageai">
   <meta name="description" content="Prakruti Patel is a Vancouver-based visual artist and muralist working across drawing, painting, murals and commissioned artwork.">
   <meta name="theme-color" content="#F8F9FA">
   <meta property="og:title" content="Prakruti Patel — Visual Artist">
@@ -148,7 +149,7 @@
         <div class="story__intro">
           <figure class="story__photo">
             <img src="assets/img/prakruti-sm.webp" srcset="assets/img/prakruti-sm.webp 640w, assets/img/prakruti.webp 1100w" sizes="(max-width: 1100px) 90vw, 36vw" width="640" height="922" alt="Prakruti Patel holding her acrylic painting of a pink blossom tree">
-            <figcaption class="label">Prakruti with one of her acrylic paintings</figcaption>
+            <figcaption class="label">Prakruti with <em>Spring in Bloom</em>, acrylic on canvas, 2025</figcaption>
           </figure>
         </div>
         <div class="story__text">
@@ -334,7 +335,10 @@
             <button class="filter" data-filter="Digital">Digital</button>
           </div>
         </div>
-        <div class="work__track" data-track></div>
+        <div class="wrap work__track" data-track></div>
+        <div class="wrap work__more">
+          <button class="btn btn--ghost magnetic" data-more aria-expanded="false"><span>Show more work</span></button>
+        </div>
       </div>
     </section>
 
@@ -402,41 +406,17 @@
           </form>
         </div>
 
-        <div class="shop__wall" aria-label="A glimpse of my canvas work">
-          <div class="shop__stamp" aria-hidden="true">
-            <svg viewBox="0 0 200 200">
-              <defs><path id="stamp-ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
-              <text><textPath href="#stamp-ring" textLength="462">OPENING SOON ✦ THE CANVAS SHOP ✦ </textPath></text>
-            </svg>
-            <span>Coming<br><em>soon</em></span>
-          </div>
-          <figure class="canvas" style="--tilt:-2deg" data-open-work="Dance Series" data-cursor="View" role="button" tabindex="0" aria-label="View Dance Series">
-            <span class="canvas__art"><img src="assets/work/dance-1-sm.webp" alt="Painting of classical Indian dancers on a rainbow ground" loading="lazy" decoding="async"></span>
-            <figcaption class="canvas__tag"><strong>Dance Series</strong><span>Painting on canvas</span></figcaption>
-          </figure>
-          <figure class="canvas" style="--tilt:1.5deg" data-open-work="Sky Canvases" data-cursor="View" role="button" tabindex="0" aria-label="View Sky Canvases">
-            <span class="canvas__art"><img src="assets/work/sky-canvases-1-sm.webp" alt="Soft sunset painting on canvas" loading="lazy" decoding="async"></span>
-            <figcaption class="canvas__tag"><strong>Sky Canvases</strong><span>Painting on canvas</span></figcaption>
-          </figure>
-          <figure class="canvas" style="--tilt:-1deg" data-open-work="Small Canvases" data-cursor="View" role="button" tabindex="0" aria-label="View Small Canvases">
-            <span class="canvas__art"><img src="assets/work/mixed-media-4-sm.webp" alt="Textured painting of a red flower on a yellow canvas" loading="lazy" decoding="async"></span>
-            <figcaption class="canvas__tag"><strong>Small Canvases</strong><span>Mixed media on canvas</span></figcaption>
-          </figure>
-          <figure class="canvas" style="--tilt:2deg" data-open-work="Forest Stream" data-cursor="View" role="button" tabindex="0" aria-label="View Forest Stream">
-            <span class="canvas__art"><img src="assets/work/forest-stream-1-sm.webp" alt="Oil painting of a stream running through a forest" loading="lazy" decoding="async"></span>
-            <figcaption class="canvas__tag"><strong>Forest Stream</strong><span>Oil painting</span></figcaption>
-          </figure>
-        </div>
       </div>
     </section>
 
     <!-- 9. FINAL CTA — Scene 3 "The Wall" -->
     <section class="finale film" id="contact" data-film="3" data-theme="dark" aria-labelledby="finale-title">
       <div class="film__stage">
-        <canvas class="film__canvas" role="img" aria-label="Wide shot revealing a large finished botanical mural"></canvas>
+        <canvas class="film__canvas" role="img" aria-label="Wide shot of a finished desert sunset wall mural"></canvas>
         <div class="film__ph finale__ph" aria-hidden="true">
+          <div class="finale__backdrop" style="background-image:url(assets/work/smokin-pizza-1-sm.webp)"></div>
           <picture class="finale__photo">
-            <img src="assets/work/geometric-living-room-1.webp" alt="Prakruti's geometric mural in layered blues in a client's living room" decoding="async" loading="lazy">
+            <img src="assets/work/smokin-pizza-1.webp" alt="Prakruti's desert sunset wall mural at Smokin Pizza" decoding="async" loading="lazy">
           </picture>
         </div>
         <div class="finale__shade" aria-hidden="true"></div>
@@ -508,7 +488,7 @@
     <div class="wrap footer__cols">
       <div>
         <p class="label">Navigate</p>
-        <a href="#selected" class="u-link">Work</a><a href="#murals" class="u-link">Murals</a><a href="#about" class="u-link">About</a><a href="#services" class="u-link">Services</a><a href="#shop" class="u-link">Shop (soon)</a><a href="#enquire" class="u-link">Contact</a>
+        <a href="#about" class="u-link">About</a><a href="#services" class="u-link">Services</a><a href="#selected" class="u-link">Work</a><a href="#shop" class="u-link">Shop (soon)</a><a href="#enquire" class="u-link">Contact</a>
       </div>
       <div>
         <p class="label">Connect</p>
@@ -522,7 +502,7 @@
     </div>
     <div class="footer__word" aria-hidden="true"><span>Prakruti Patel</span></div>
     <div class="wrap footer__base label">
-      <span>© 2026 Prakruti Patel. All artwork © the artist.</span>
+      <span>© 2026 Prakruti Patel. All artwork is original and hand-made. No copying, reproduction or AI use without written permission.</span>
       <span>Vancouver — <span data-clock>--:--</span> PT</span>
       <a href="#top" class="u-link" data-top>Back to top ↑</a>
     </div>
