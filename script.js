@@ -1088,15 +1088,13 @@
     }).join('');
 
     const items = $$('.art-item', track);
-    const count = $('[data-work-count]');
-    count.textContent = `(${items.length})`;
 
     $$('[data-filter]').forEach(btn => btn.addEventListener('click', () => {
       $$('[data-filter]').forEach(b => b.classList.toggle('is-active', b === btn));
       const f = btn.dataset.filter;
       const apply = () => {
         items.forEach(it => it.classList.toggle('is-hidden', f !== 'all' && it.dataset.cat !== f));
-        count.textContent = `(${items.filter(it => !it.classList.contains('is-hidden')).length})`;
+
         if (hasGSAP) {
           ScrollTrigger.refresh();
           // the pinned distance changed: stay at the start of the gallery
