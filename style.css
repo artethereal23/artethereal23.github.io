@@ -929,6 +929,9 @@ em { font-style: italic; }
 .lightbox figcaption { text-align: center; }
 .lightbox figcaption strong { display: block; font: 400 28px/1.1 var(--serif); }
 .lightbox figcaption span { color: var(--graphite); font-style: italic; }
+.lightbox figcaption .lightbox__status { display: block; margin-top: 12px; font: 500 11px/1.5 var(--mono); font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: var(--charcoal); }
+.lightbox__avail { display: table; margin: 6px auto 0; font: 500 11px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--terracotta); border-bottom: 1px solid currentColor; }
+.lightbox__credit { display: block; margin-top: 8px; font: 500 11px/1.5 var(--mono); font-style: normal; letter-spacing: .08em; text-transform: uppercase; color: var(--terracotta); }
 .lightbox__close { position: absolute; top: 22px; right: var(--margin); font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; padding: 10px; }
 .lightbox__nav { font: 400 36px/1 var(--serif); width: 64px; height: 64px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--hair); justify-self: center; }
 .lightbox__nav:hover { background: var(--charcoal); color: var(--paper); }
