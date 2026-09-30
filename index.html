@@ -77,12 +77,15 @@
 
   <!-- NAV -->
   <header class="nav" data-nav>
-    <a href="#top" class="nav__brand" data-cursor="Home">Prakruti Patel</a>
+    <a href="#top" class="nav__brand" data-cursor="Home" aria-label="Prakruti Patel, home">
+      <span class="nav__name">Prakruti <em>Patel</em></span>
+      <span class="nav__role">Visual Artist · Vancouver</span>
+      <svg class="nav__stroke" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C40 3 90 10 130 6 C160 3 185 7 197 5"/></svg>
+    </a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#selected" class="u-link">Work</a>
-      <a href="#murals" class="u-link">Murals</a>
       <a href="#about" class="u-link">About</a>
       <a href="#services" class="u-link">Services</a>
+      <a href="#selected" class="u-link">Work</a>
       <a href="#shop" class="u-link nav__shop">Shop<sup>soon</sup></a>
       <a href="#enquire" class="u-link">Contact</a>
     </nav>
@@ -92,10 +95,9 @@
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Mobile">
-      <a href="#selected">Work</a>
-      <a href="#murals">Murals</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#selected">Work</a>
       <a href="#shop">Shop<sup>soon</sup></a>
       <a href="#enquire">Contact</a>
     </nav>
@@ -116,17 +118,16 @@
         <div class="hero__vignette" aria-hidden="true"></div>
 
         <div class="hero__content wrap">
-          <p class="label hero__eyebrow">Prakruti Patel · Visual Artist · Muralist · Art Educator</p>
+          <p class="label hero__eyebrow">Visual Artist · Muralist · Art Educator</p>
           <h1 class="hero__title" id="hero-title">
-            <span class="line">Creating across</span>
-            <span class="line">canvas, walls and</span>
-            <span class="line"><em>evolving creative</em></span>
-            <span class="line"><em>spaces.</em>
+            <span class="line">Paintings, murals</span>
+            <span class="line">and custom art,</span>
+            <span class="line"><em>made by hand.</em>
               <svg class="scribble" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true"><path class="draw" d="M4 20 C80 8 160 26 240 14 C300 6 350 18 396 10"/></svg>
             </span>
           </h1>
           <div class="hero__bottom">
-            <p class="hero__sub">A multidisciplinary visual artist working across drawing, painting, murals and commissioned artwork, with a practice rooted in traditional art foundations, experimentation and continuous creative growth.</p>
+            <p class="hero__sub">Vancouver-based artist working in drawing, painting and murals, for homes, businesses and private commissions.</p>
             <div class="hero__ctas">
               <a href="#selected" class="btn btn--primary magnetic"><span>View Portfolio</span></a>
               <a href="#about" class="u-link hero__link">About Me →</a>
@@ -141,12 +142,124 @@
       </div>
     </section>
 
-    <!-- 2. SELECTED WORK — strongest pieces, first thing after the hero -->
+    <!-- 2. ABOUT -->
+    <section class="story" id="about" aria-labelledby="story-title">
+      <div class="wrap story__grid">
+        <div class="story__intro">
+          <p class="label">01 — About</p>
+          <h2 class="h2 reveal-lines" id="story-title">Trained in fine art. Driven by curiosity. <em>Happiest with paint on my hands.</em></h2>
+          <figure class="story__photo">
+            <img src="assets/img/prakruti-sm.webp" srcset="assets/img/prakruti-sm.webp 640w, assets/img/prakruti.webp 1100w" sizes="(max-width: 1100px) 90vw, 32vw" width="640" height="922" loading="lazy" alt="Prakruti Patel holding her acrylic painting of a pink blossom tree">
+            <figcaption class="label">Prakruti with one of her acrylic paintings</figcaption>
+          </figure>
+        </div>
+        <div class="story__text">
+          <div class="story__copy">
+            <p>I'm Prakruti, a multidisciplinary visual artist working across drawing, painting, murals and commissioned artwork.</p>
+            <p>My foundation is a Bachelor's degree in Visual Arts, grounded in drawing, painting, composition and art history. Postgraduate studies at Seneca College, including a full course in life drawing, sharpened my eye for the figure, light and form.</p>
+            <p>For more than eight years I&rsquo;ve painted murals for caf&eacute;s, restaurants, offices, homes and IIM Ahmedabad, and hand-painted furniture, planters and bottles for private clients. Every new surface teaches me something, and I adapt quickly to new mediums and scales.</p>
+            <p>Alongside my own practice, I share what I've learned through teaching and mentoring. I'm open to murals, commissions, collaborations and art instructor roles.</p>
+          </div>
+          <ol class="timeline">
+            <li><strong>Bachelor of Visual Arts</strong><span>Drawing, painting, composition, art history</span></li>
+            <li><strong>Postgraduate studies — Seneca College</strong><span>Life drawing, anatomy, light &amp; form</span></li>
+            <li><strong>Murals &amp; commissions — 8+ years</strong><span>Cafés, restaurants, offices, homes &amp; IIM Ahmedabad</span></li>
+            <li><strong>Now — Vancouver, Canada</strong><span>Studio practice, murals, commissions &amp; teaching</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="mission" aria-label="Artist statement">
+      <div class="wrap">
+        <p class="label">Artist statement</p>
+        <p class="mission__text" data-words>
+          I believe art should be <em>felt</em>, <em>lived with</em> and <em>shared</em>. My practice moves from a quick sketch to a <em>finished wall</em>, always rooted in drawing, colour and close observation, and always <em>learning</em> something new.
+        </p>
+        <svg class="mission__sig" viewBox="0 0 320 90" aria-label="Signed, Prakruti" role="img">
+          <path class="draw" d="M10 70 C30 20 40 10 44 40 C46 60 30 70 26 58 C24 40 60 30 70 44 C76 54 70 64 80 60 C92 54 96 40 104 46 C110 52 100 66 112 62 C124 58 128 44 136 50 C142 56 138 66 150 62 C170 54 170 20 180 30 C186 40 170 64 186 62 C200 60 204 44 214 50 C222 56 216 66 228 62 C248 54 258 40 272 48 C284 56 290 60 310 52"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 3. ART & EDUCATION — concise, supports the portfolio -->
+    <section class="education" id="education" aria-labelledby="education-title">
+      <div class="wrap education__grid">
+        <div class="education__intro">
+          <p class="label">02 — Art &amp; Education</p>
+          <h2 class="h2 reveal-lines" id="education-title">Sharing the <em>practice.</em></h2>
+          <p>My teaching grows out of my own studio work: strong fundamentals in observation, drawing and colour, shared with patience and encouragement.</p>
+        </div>
+        <ul class="education__list">
+          <li>
+            <span class="label">Volunteer</span>
+            <h3>Assistant Art Instructor</h3>
+            <p>Children's drawing &amp; painting classes · Ages 5–12</p>
+          </li>
+          <li>
+            <span class="label">Seneca College</span>
+            <h3>Student Peer Mentor</h3>
+            <p>Supported a group of approximately 10 students</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES / COMMISSIONS -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">03 — Work With Me</p>
+          <h2 class="h1 reveal-lines" id="services-title">Let's make something <em>together.</em></h2>
+        </div>
+        <ul class="offers">
+          <li class="offer" data-enquiry="Mural">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">01</span>
+              <span class="offer__title">Murals</span>
+              <span class="offer__for">Homes, cafés, offices, schools</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Large-scale walls designed around your space and story. On-site across Metro Vancouver.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+          <li class="offer" data-enquiry="Commission">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">02</span>
+              <span class="offer__title">Commissions</span>
+              <span class="offer__for">Individuals &amp; collectors</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Original paintings, drawings and portraits made for you.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+          <li class="offer" data-enquiry="Custom piece">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">03</span>
+              <span class="offer__title">Custom Painted Pieces</span>
+              <span class="offer__for">Furniture, planters, décor</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Hand-painted patterns and artwork on furniture, planters, bottles and other surfaces.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+          <li class="offer" data-enquiry="Teaching">
+            <button class="offer__row" aria-expanded="false">
+              <span class="label offer__num">04</span>
+              <span class="offer__title">Teaching &amp; Workshops</span>
+              <span class="offer__for">Schools, studios, programs</span>
+              <span class="offer__arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="offer__detail"><p>Art instruction and creative workshops in drawing and painting.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. SELECTED WORK — strongest pieces -->
     <section class="selected" id="selected" aria-labelledby="selected-title">
       <div class="wrap">
         <div class="selected__head">
           <div>
-            <p class="label">01 — Selected Work</p>
+            <p class="label">04 — Selected Work</p>
             <h2 class="h1 reveal-lines" id="selected-title">Selected <em>work.</em></h2>
           </div>
           <p class="selected__intro">A curated edit across walls, canvas and paper: murals, oil, acrylic, watercolour, ink and life drawing.</p>
@@ -205,12 +318,12 @@
       </div>
     </section>
 
-    <!-- 3. PORTFOLIO — full gallery with categories -->
+    <!-- 6. PORTFOLIO — full gallery with categories -->
     <section class="work" id="work" aria-labelledby="work-title">
       <div class="work__pin">
         <div class="wrap work__head">
           <div>
-            <p class="label">02 — Portfolio</p>
+            <p class="label">05 — Portfolio</p>
             <h2 class="h1" id="work-title">The <em>portfolio</em><sup class="work__count" data-work-count>(28)</sup></h2>
           </div>
           <div class="filters" role="group" aria-label="Filter work" data-filters>
@@ -226,12 +339,12 @@
       </div>
     </section>
 
-    <!-- 4. MURALS & CLIENT PROJECTS -->
+    <!-- 7. MURALS & CLIENT PROJECTS -->
     <section class="murals" id="murals" aria-labelledby="murals-title">
       <div class="wrap">
         <div class="murals__head">
           <div>
-            <p class="label">03 — Murals &amp; Client Projects</p>
+            <p class="label">06 — Murals &amp; Client Projects</p>
             <h2 class="h1 reveal-lines" id="murals-title">Walls, spaces <em>&amp; commissions.</em></h2>
           </div>
           <p class="murals__intro">More than eight years of large-scale murals and commissioned pieces for cafés, restaurants, offices, homes and IIM Ahmedabad, each one planned, drawn out and painted by hand.</p>
@@ -272,115 +385,6 @@
         </div>
       </div>
     </section>
-
-    <!-- MISSION -->
-    <section class="mission" aria-label="Artist statement">
-      <div class="wrap">
-        <p class="label">Artist statement</p>
-        <p class="mission__text" data-words>
-          I believe art should be <em>felt</em>, <em>lived with</em> and <em>shared</em>. My practice moves from a quick sketch to a <em>finished wall</em>, always rooted in drawing, colour and close observation, and always <em>learning</em> something new.
-        </p>
-        <svg class="mission__sig" viewBox="0 0 320 90" aria-label="Signed, Prakruti" role="img">
-          <path class="draw" d="M10 70 C30 20 40 10 44 40 C46 60 30 70 26 58 C24 40 60 30 70 44 C76 54 70 64 80 60 C92 54 96 40 104 46 C110 52 100 66 112 62 C124 58 128 44 136 50 C142 56 138 66 150 62 C170 54 170 20 180 30 C186 40 170 64 186 62 C200 60 204 44 214 50 C222 56 216 66 228 62 C248 54 258 40 272 48 C284 56 290 60 310 52"/>
-        </svg>
-      </div>
-    </section>
-
-    <!-- 5. ABOUT -->
-    <section class="story" id="about" aria-labelledby="story-title">
-      <div class="wrap story__grid">
-        <div class="story__intro">
-          <p class="label">04 — About</p>
-          <h2 class="h2 reveal-lines" id="story-title">Trained in fine art. Driven by curiosity. <em>Happiest with paint on my hands.</em></h2>
-        </div>
-        <div class="story__text">
-          <div class="story__copy">
-            <p>I'm Prakruti, a multidisciplinary visual artist working across drawing, painting, murals and commissioned artwork.</p>
-            <p>My foundation is a Bachelor's degree in Visual Arts, grounded in drawing, painting, composition and art history. Postgraduate studies at Seneca College, including a full course in life drawing, sharpened my eye for the figure, light and form.</p>
-            <p>For more than eight years I&rsquo;ve painted murals for caf&eacute;s, restaurants, offices, homes and IIM Ahmedabad, and hand-painted furniture, planters and bottles for private clients. Every new surface teaches me something, and I adapt quickly to new mediums and scales.</p>
-            <p>Alongside my own practice, I share what I've learned through teaching and mentoring. I'm open to murals, commissions, collaborations and art instructor roles.</p>
-          </div>
-          <ol class="timeline">
-            <li><strong>Bachelor of Visual Arts</strong><span>Drawing, painting, composition, art history</span></li>
-            <li><strong>Postgraduate studies — Seneca College</strong><span>Life drawing, anatomy, light &amp; form</span></li>
-            <li><strong>Murals &amp; commissions — 8+ years</strong><span>Cafés, restaurants, offices, homes &amp; IIM Ahmedabad</span></li>
-            <li><strong>Now — Vancouver, Canada</strong><span>Studio practice, murals, commissions &amp; teaching</span></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. ART & EDUCATION — concise, supports the portfolio -->
-    <section class="education" id="education" aria-labelledby="education-title">
-      <div class="wrap education__grid">
-        <div class="education__intro">
-          <p class="label">05 — Art &amp; Education</p>
-          <h2 class="h2 reveal-lines" id="education-title">Sharing the <em>practice.</em></h2>
-          <p>My teaching grows out of my own studio work: strong fundamentals in observation, drawing and colour, shared with patience and encouragement.</p>
-        </div>
-        <ul class="education__list">
-          <li>
-            <span class="label">Volunteer</span>
-            <h3>Assistant Art Instructor</h3>
-            <p>Children's drawing &amp; painting classes · Ages 5–12</p>
-          </li>
-          <li>
-            <span class="label">Seneca College</span>
-            <h3>Student Peer Mentor</h3>
-            <p>Supported a group of approximately 10 students</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 7. SERVICES / COMMISSIONS -->
-    <section class="services" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="label">06 — Work With Me</p>
-          <h2 class="h1 reveal-lines" id="services-title">Let's make something <em>together.</em></h2>
-        </div>
-        <ul class="offers">
-          <li class="offer" data-enquiry="Mural">
-            <button class="offer__row" aria-expanded="false">
-              <span class="label offer__num">01</span>
-              <span class="offer__title">Murals</span>
-              <span class="offer__for">Homes, cafés, offices, schools</span>
-              <span class="offer__arrow" aria-hidden="true">→</span>
-            </button>
-            <div class="offer__detail"><p>Large-scale walls designed around your space and story. On-site across Metro Vancouver.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
-          </li>
-          <li class="offer" data-enquiry="Commission">
-            <button class="offer__row" aria-expanded="false">
-              <span class="label offer__num">02</span>
-              <span class="offer__title">Commissions</span>
-              <span class="offer__for">Individuals &amp; collectors</span>
-              <span class="offer__arrow" aria-hidden="true">→</span>
-            </button>
-            <div class="offer__detail"><p>Original paintings, drawings and portraits made for you.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
-          </li>
-          <li class="offer" data-enquiry="Custom piece">
-            <button class="offer__row" aria-expanded="false">
-              <span class="label offer__num">03</span>
-              <span class="offer__title">Custom Painted Pieces</span>
-              <span class="offer__for">Furniture, planters, décor</span>
-              <span class="offer__arrow" aria-hidden="true">→</span>
-            </button>
-            <div class="offer__detail"><p>Hand-painted patterns and artwork on furniture, planters, bottles and other surfaces.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
-          </li>
-          <li class="offer" data-enquiry="Teaching">
-            <button class="offer__row" aria-expanded="false">
-              <span class="label offer__num">04</span>
-              <span class="offer__title">Teaching &amp; Workshops</span>
-              <span class="offer__for">Schools, studios, programs</span>
-              <span class="offer__arrow" aria-hidden="true">→</span>
-            </button>
-            <div class="offer__detail"><p>Art instruction and creative workshops in drawing and painting.</p><a href="#enquire" class="u-link" data-enquire>Enquire →</a></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
 
     <!-- 8. CANVAS SHOP — coming soon -->
     <section class="shop" id="shop" aria-labelledby="shop-title">
