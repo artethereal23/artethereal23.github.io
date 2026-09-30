@@ -348,6 +348,9 @@ em { font-style: italic; }
 .story__title { font-size: clamp(38px, 4vw, 72px); margin-bottom: 48px; }
 .story__copy { display: flex; flex-direction: column; gap: 1.1em; max-width: 60ch; color: var(--graphite); font-size: clamp(16px, 1.15vw, 19px); }
 .story__copy p:first-child { color: var(--charcoal); font-size: var(--fs-lead); }
+.story__quote { margin: 56px 0 0; padding-left: 20px; border-left: 1px solid var(--terracotta); max-width: 56ch; }
+.story__quote blockquote { margin: 0; font: italic 400 15px/1.6 var(--serif); color: var(--graphite); }
+.story__quote figcaption { margin-top: 10px; font: 500 10px/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--graphite); opacity: .8; }
 .timeline { position: relative; margin-top: 64px; padding-left: 36px; display: flex; flex-direction: column; gap: 28px; }
 .timeline::before, .timeline::after { content: ""; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 1px; background: var(--hair); }
 .timeline::after { background: var(--terracotta); transform-origin: top; transform: scaleY(var(--line, 0)); }
