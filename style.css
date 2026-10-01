@@ -99,25 +99,18 @@ em { font-style: italic; }
 }
 .is-hidden-tab .grain { animation-play-state: paused; }
 
-/* ---------- cursor ---------- */
-.cursor {
-  position: fixed; left: 0; top: 0; z-index: 950; pointer-events: none;
-  width: 10px; height: 10px; margin: -5px 0 0 -5px;
-  border-radius: 50%; background: var(--charcoal);
-  display: grid; place-items: center;
-  transition: width .45s var(--ease), height .45s var(--ease), margin .45s var(--ease), background .3s, opacity .3s;
-  opacity: 0;
+/* ---------- cursor: the visitor's own pointer; a click leaves a soft ink ring ---------- */
+.ink { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 940; pointer-events: none; }
+/* the pointer is a small teal paintbrush; its tip is the exact click point */
+@media (hover: hover) and (pointer: fine) {
+  html { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg transform='rotate(45 16 16)' stroke='%23F8F9FA' stroke-width='1.4' stroke-linejoin='round' paint-order='stroke'%3E%3Cpath d='M13 12.9 L31.4 13.9 Q35.2 16 31.4 18.1 L13 19.1 Z' fill='%23008080'/%3E%3Crect x='7' y='12.4' width='6.4' height='7.2' rx='1' fill='%23AFC0C5'/%3E%3Cpath d='M-3.4 16 C0 12.8 4 12.2 7.2 12.6 L7.2 19.4 C4 19.8 0 19.2 -3.4 16 Z' fill='%231A252C'/%3E%3Cpath d='M-3.4 16 C-1.1 14.1 1.2 13.5 3.2 13.6 L3.2 18.4 C1.2 18.5 -1.1 17.9 -3.4 16 Z' fill='%2300A3A3' stroke='none'/%3E%3C/g%3E%3C/svg%3E") 2 2, auto; }
+  a, button, label, summary, [role="button"], select { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg transform='rotate(45 16 16)' stroke='%23F8F9FA' stroke-width='1.4' stroke-linejoin='round' paint-order='stroke'%3E%3Cpath d='M13 12.9 L31.4 13.9 Q35.2 16 31.4 18.1 L13 19.1 Z' fill='%23008080'/%3E%3Crect x='7' y='12.4' width='6.4' height='7.2' rx='1' fill='%23AFC0C5'/%3E%3Cpath d='M-3.4 16 C0 12.8 4 12.2 7.2 12.6 L7.2 19.4 C4 19.8 0 19.2 -3.4 16 Z' fill='%231A252C'/%3E%3Cpath d='M-3.4 16 C-1.1 14.1 1.2 13.5 3.2 13.6 L3.2 18.4 C1.2 18.5 -1.1 17.9 -3.4 16 Z' fill='%2300A3A3' stroke='none'/%3E%3C/g%3E%3C/svg%3E") 2 2, pointer; }
+  input, textarea { cursor: text; }
+  input[type="radio"], input[type="checkbox"], input[type="submit"] { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg transform='rotate(45 16 16)' stroke='%23F8F9FA' stroke-width='1.4' stroke-linejoin='round' paint-order='stroke'%3E%3Cpath d='M13 12.9 L31.4 13.9 Q35.2 16 31.4 18.1 L13 19.1 Z' fill='%23008080'/%3E%3Crect x='7' y='12.4' width='6.4' height='7.2' rx='1' fill='%23AFC0C5'/%3E%3Cpath d='M-3.4 16 C0 12.8 4 12.2 7.2 12.6 L7.2 19.4 C4 19.8 0 19.2 -3.4 16 Z' fill='%231A252C'/%3E%3Cpath d='M-3.4 16 C-1.1 14.1 1.2 13.5 3.2 13.6 L3.2 18.4 C1.2 18.5 -1.1 17.9 -3.4 16 Z' fill='%2300A3A3' stroke='none'/%3E%3C/g%3E%3C/svg%3E") 2 2, pointer; }
 }
-.cursor__label { font: 500 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--paper); opacity: 0; transition: opacity .2s; }
-.cursor.is-visible { opacity: 1; }
-.cursor.is-label { width: 84px; height: 84px; margin: -42px 0 0 -42px; background: var(--terracotta); }
-.cursor.is-label .cursor__label { opacity: 1; }
-.cursor.is-link { width: 44px; height: 44px; margin: -22px 0 0 -22px; background: transparent; box-shadow: inset 0 0 0 1px var(--charcoal); }
-.on-dark .cursor { background: var(--paper); }
-.on-dark .cursor.is-link { box-shadow: inset 0 0 0 1px var(--paper); background: transparent; }
-.on-dark .cursor.is-label { background: var(--terracotta); }
-@media (hover: none), (pointer: coarse) { .cursor { display: none; } }
-@media (hover: hover) and (pointer: fine) { .has-cursor, .has-cursor a, .has-cursor button { cursor: none; } }
+/* artwork and the image viewer keep the magnifying glass */
+[data-cursor="View"], [data-cursor="View"] *, .lightbox__art, .lightbox__art * { cursor: zoom-in; }
+@media (hover: none), (pointer: coarse) { .ink { display: none; } }
 
 /* ---------- page progress (the line) ---------- */
 .page-progress { position: fixed; right: 14px; top: 20vh; bottom: 20vh; width: 1px; background: var(--hair); z-index: 80; }
@@ -904,8 +897,6 @@ em { font-style: italic; }
 .footer__cols > div { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .footer__cols .label { margin-bottom: 10px; }
 .footer__cols p:not(.label) { color: rgba(248, 249, 250, .75); max-width: 30ch; }
-.footer__word { overflow: hidden; margin-top: 8vh; line-height: .8; }
-.footer__word span { display: block; text-align: center; white-space: nowrap; font: 400 20.5vw/.86 var(--serif); letter-spacing: -.04em; }
 .footer__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 26px 0; border-top: 1px solid var(--hair-light); }
 .footer__legal { max-width: 1600px; padding-top: 18px; padding-bottom: 28px; font: 400 11px/1.6 var(--sans); letter-spacing: .01em; color: rgba(248, 249, 250, .62); text-wrap: pretty; }
 

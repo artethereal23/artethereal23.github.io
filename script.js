@@ -95,7 +95,6 @@
 
   if (!ANIM) html.classList.add('no-anim');
   if (hasGSAP) gsap.registerPlugin(ScrollTrigger, ...(window.SplitText ? [SplitText] : []));
-  if (finePointer) body.classList.add('has-cursor');
 
   let lenis = null;
   let studioTrigger = null;
@@ -1399,20 +1398,54 @@
     ScrollTrigger.create({ start: 0, end: 'max', onUpdate: self => { bar.style.transform = `scaleY(${self.progress})`; } });
   }
 
+  // The visitor keeps their own pointer: nothing follows the mouse. A click leaves a soft teal ink ring
+  // that spreads and fades, like a drop of ink in water, wherever they click (skipped for reduced motion).
   function initCursor() {
-    if (!finePointer || !hasGSAP) return;
-    const c = $('.cursor'), label = $('.cursor__label');
-    const xTo = gsap.quickTo(c, 'x', { duration: 0.18, ease: 'power3' });
-    const yTo = gsap.quickTo(c, 'y', { duration: 0.18, ease: 'power3' });
-    addEventListener('mousemove', e => { xTo(e.clientX); yTo(e.clientY); c.classList.add('is-visible'); });
-    document.addEventListener('mouseleave', () => c.classList.remove('is-visible'));
-    document.addEventListener('mouseover', e => {
-      const withLabel = e.target.closest('[data-cursor]');
-      const link = e.target.closest('a, button, label, input, textarea');
-      c.classList.toggle('is-label', !!withLabel);
-      c.classList.toggle('is-link', !withLabel && !!link);
-      label.textContent = withLabel ? withLabel.dataset.cursor : '';
+    if (!finePointer) return;
+    const canvas = $('.ink');
+    if (reduced) { canvas.remove(); return; }
+    const ctx = canvas.getContext('2d');
+    let dpr = 1;
+    const size = () => {
+      dpr = Math.min(2, devicePixelRatio || 1);
+      canvas.width = innerWidth * dpr; canvas.height = innerHeight * dpr;
+    };
+    size(); addEventListener('resize', size);
+
+    const LIFE = 750;
+    const drops = [];           // { x, y, t }
+    let running = false, lastY = scrollY;
+
+    addEventListener('pointerdown', e => {
+      if (e.button !== 0) return;
+      drops.push({ x: e.clientX, y: e.clientY, t: performance.now() });
+      if (!running) { running = true; lastY = scrollY; requestAnimationFrame(draw); }
     });
+
+    function draw() {
+      const now = performance.now();
+      const dy = scrollY - lastY; lastY = scrollY;              // the ink sits on the page
+      if (dy) drops.forEach(d => { d.y -= dy; });
+      while (drops.length && now - drops[0].t > LIFE) drops.shift();
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, innerWidth, innerHeight);
+      const rgb = body.classList.contains('on-dark') ? '111, 194, 194' : '0, 128, 128';
+      drops.forEach(d => {
+        const p = (now - d.t) / LIFE, ease = 1 - Math.pow(1 - p, 3);
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, 3 + ease * 30, 0, Math.PI * 2);
+        ctx.strokeStyle = `rgba(${rgb}, ${(0.9 * (1 - p)).toFixed(3)})`;
+        ctx.lineWidth = 2 * (1 - p) + 0.4;
+        ctx.stroke();
+        ctx.beginPath();                                        // a faint second ripple, slightly behind
+        ctx.arc(d.x, d.y, 2 + ease * 16, 0, Math.PI * 2);
+        ctx.strokeStyle = `rgba(${rgb}, ${(0.45 * (1 - p)).toFixed(3)})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      });
+      if (drops.length) requestAnimationFrame(draw);
+      else { running = false; ctx.clearRect(0, 0, innerWidth, innerHeight); }
+    }
   }
 
   function initMagnetic() {
@@ -1438,7 +1471,6 @@
 
   function initFooter() {
     if (!ANIM) return;
-    gsap.from('.footer__word span', { yPercent: 100, duration: 1.6, ease: 'expo.out', scrollTrigger: { trigger: '.footer', start: 'top 60%' } });
     gsap.from('.footer__cols > div', { y: 30, opacity: 0, stagger: 0.1, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: '.footer', start: 'top 80%' } });
   }
 
