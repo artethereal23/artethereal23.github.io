@@ -22,9 +22,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <script type="application/ld+json">
   {
@@ -89,7 +89,6 @@
       <svg class="nav__stroke" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C40 3 90 10 130 6 C160 3 185 7 197 5"/></svg>
     </a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#guestbook" class="u-link">Guestbook</a>
       <a href="#about" class="u-link">About</a>
       <a href="#services" class="u-link">Services</a>
       <a href="#selected" class="u-link">Work</a>
@@ -102,7 +101,6 @@
 
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Mobile">
-      <a href="#guestbook">Guestbook</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#selected">Work</a>
@@ -150,160 +148,6 @@
       </div>
     </section>
 
-    <!-- 1b. GUESTBOOK — the wall of notes (public, approved by Prakruti) + private suggestions (emailed) -->
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-      <defs>
-        <symbol id="gb-leaf" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38 C10 20 22 9 40 8 C40 27 29 38 10 38 Z"/><path d="M10 38 C18 30 25 23 33 15"/><path d="M20 28 L19 21 M26 22 L26 16 M22 26 L29 26 M27 20 L33 21"/></g></symbol>
-        <symbol id="gb-flower" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="20" r="4"/><path d="M24 16 C20 6 28 6 24 16 M28 20 C38 16 38 24 28 20 M24 24 C28 34 20 34 24 24 M20 20 C10 24 10 16 20 20"/><path d="M27 17 C33 9 37 13 27 17 M27 23 C35 29 31 33 27 23 M21 23 C15 31 11 27 21 23 M21 17 C13 11 17 7 21 17" opacity=".55"/><path d="M24 34 C24 38 23 41 21 44 M23 39 C19 36 16 37 14 39"/></g></symbol>
-        <symbol id="gb-sun" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="8"/><path d="M24 6 V11 M24 37 V42 M6 24 H11 M37 24 H42 M11 11 L14.5 14.5 M33.5 33.5 L37 37 M37 11 L33.5 14.5 M14.5 33.5 L11 37"/><path d="M21 23 h.01 M27 23 h.01 M21 27 C23 29 25 29 27 27"/></g></symbol>
-        <symbol id="gb-star" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7 L28.6 18.4 L40.5 19 L31.3 26.6 L34.4 38.4 L24 31.8 L13.6 38.4 L16.7 26.6 L7.5 19 L19.4 18.4 Z"/><path d="M40 6 v5 M37.5 8.5 h5 M8 36 v4 M6 38 h4"/></g></symbol>
-        <symbol id="gb-heart" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40 C14 32 7 26 7 18 C7 12 11.5 8 16.5 8 C20 8 22.6 10 24 13 C25.4 10 28 8 31.5 8 C36.5 8 41 12 41 18 C41 26 34 32 24 40 Z"/><path d="M14 17 C14 14.5 15.5 13 17.5 13"/></g></symbol>
-        <symbol id="gb-brush" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M40 7 L22 27"/><path d="M19 24 L24 29"/><path d="M18 25 C12 25 10 30 10 34 C10 37 8 39 6 40 C12 42 21 41 23 34 C24 31 22 28 18 25 Z"/><path d="M33 40 c2 0 4 -1 4 -3 c0 -2 -2 -3 -2 -5 c-2 2 -4 3 -4 5 c0 2 1 3 2 3 Z"/></g></symbol>
-      </defs>
-    </svg>
-    <section class="guestbook" id="guestbook" aria-labelledby="guestbook-title">
-      <div class="wrap">
-        <div class="guestbook__head">
-          <div>
-            <p class="label">01 — Guestbook</p>
-            <h2 class="h1 reveal-lines" id="guestbook-title">Leave a mark on <em>the wall.</em></h2>
-          </div>
-          <p class="guestbook__lead">This wall is yours. Leave a kind word, a memory or a little hello, and I'll hang it up here.</p>
-        </div>
-
-        <div class="gb-tabs" role="tablist" aria-label="Guestbook">
-          <button class="gb-tab is-active" role="tab" id="gb-tab-wall" aria-controls="gb-panel-wall" aria-selected="true">
-            <svg aria-hidden="true"><use href="#gb-brush"/></svg><span>Leave a note on the wall</span>
-          </button>
-          <button class="gb-tab" role="tab" id="gb-tab-suggest" aria-controls="gb-panel-suggest" aria-selected="false" tabindex="-1">
-            <svg aria-hidden="true"><use href="#gb-star"/></svg><span>Send me a suggestion</span>
-          </button>
-        </div>
-
-        <!-- Panel 1: the wall -->
-        <div class="gb-panel" id="gb-panel-wall" role="tabpanel" aria-labelledby="gb-tab-wall">
-          <div class="gb-grid">
-            <form class="gb-form" data-gb-form novalidate>
-              <div class="gb-prompt">
-                <span class="label">Not sure what to write? Tap one</span>
-                <div class="gb-sparks" data-gb-sparks></div>
-              </div>
-
-              <!-- the composer: a sticky note in the chosen paint, ready to write and sketch on -->
-              <div class="gb-sticky gb--sky" data-gb-sticky>
-                <span class="gb-note__tape" aria-hidden="true"></span>
-                <svg class="gb-sticky__doodle" data-gb-doodle-preview aria-hidden="true"><use href="#gb-leaf"/></svg>
-                <label for="gb-msg" class="sr">Your note</label>
-                <textarea id="gb-msg" name="message" rows="4" maxlength="280" placeholder="Write your note here…" required></textarea>
-                <div class="gb-sketch" data-gb-sketch hidden>
-                  <canvas data-gb-canvas role="img" aria-label="Sketch pad: draw with your mouse, finger or stylus"></canvas>
-                  <span class="gb-sketch__hint" data-gb-hint aria-hidden="true">✎ sketch here</span>
-                  <div class="gb-sketch__tools">
-                    <button type="button" data-gb-undo>Undo</button>
-                    <button type="button" data-gb-clear>Clear</button>
-                  </div>
-                </div>
-                <div class="gb-sign">
-                  <span aria-hidden="true">—</span>
-                  <input id="gb-name" name="name" type="text" maxlength="40" autocomplete="given-name" placeholder="your name" aria-label="Your name" required>
-                  <input id="gb-place" name="place" type="text" maxlength="40" placeholder="your city (optional)" aria-label="Your city (optional)">
-                </div>
-                <span class="gb-count" data-gb-count aria-hidden="true">0 / 280</span>
-              </div>
-
-              <fieldset class="gb-pick">
-                <legend class="label">Pick a paint</legend>
-                <div class="gb-swatches">
-                  <label title="Sky"><input type="radio" name="colour" value="sky" checked><span class="gb-swatch gb--sky"></span><span class="sr">Sky</span></label>
-                  <label title="Mint"><input type="radio" name="colour" value="mint"><span class="gb-swatch gb--mint"></span><span class="sr">Mint</span></label>
-                  <label title="Butter"><input type="radio" name="colour" value="butter"><span class="gb-swatch gb--butter"></span><span class="sr">Butter</span></label>
-                  <label title="Blush"><input type="radio" name="colour" value="blush"><span class="gb-swatch gb--blush"></span><span class="sr">Blush</span></label>
-                  <label title="Lilac"><input type="radio" name="colour" value="lilac"><span class="gb-swatch gb--lilac"></span><span class="sr">Lilac</span></label>
-                  <label title="Teal"><input type="radio" name="colour" value="teal"><span class="gb-swatch gb--teal"></span><span class="sr">Teal</span></label>
-                </div>
-              </fieldset>
-
-              <fieldset class="gb-pick">
-                <legend class="label">Add a little extra</legend>
-                <div class="gb-mode">
-                  <label><input type="radio" name="extra" value="doodle" checked><span><svg aria-hidden="true"><use href="#gb-flower"/></svg>Pick a doodle</span></label>
-                  <label><input type="radio" name="extra" value="sketch"><span><svg aria-hidden="true"><use href="#gb-brush"/></svg>Sketch your own</span></label>
-                </div>
-                <div class="gb-doodles" data-gb-doodles>
-                  <label title="Leaf"><input type="radio" name="doodle" value="leaf" checked><span><svg><use href="#gb-leaf"/></svg></span><span class="sr">Leaf</span></label>
-                  <label title="Flower"><input type="radio" name="doodle" value="flower"><span><svg><use href="#gb-flower"/></svg></span><span class="sr">Flower</span></label>
-                  <label title="Sun"><input type="radio" name="doodle" value="sun"><span><svg><use href="#gb-sun"/></svg></span><span class="sr">Sun</span></label>
-                  <label title="Star"><input type="radio" name="doodle" value="star"><span><svg><use href="#gb-star"/></svg></span><span class="sr">Star</span></label>
-                  <label title="Heart"><input type="radio" name="doodle" value="heart"><span><svg><use href="#gb-heart"/></svg></span><span class="sr">Heart</span></label>
-                  <label title="Paintbrush"><input type="radio" name="doodle" value="brush"><span><svg><use href="#gb-brush"/></svg></span><span class="sr">Paintbrush</span></label>
-                </div>
-                <p class="gb-mode__hint" data-gb-sketch-hint hidden>Draw right on your sticky note above. Not feeling it? Switch back to a doodle any time.</p>
-              </fieldset>
-
-              <!-- spam trap: people never see or fill this -->
-              <input class="gb-trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-              <div class="gb-submit">
-                <button type="submit" class="btn btn--primary magnetic"><span>Hang it on the wall</span></button>
-                <p class="gb-note-small">I read every note before it goes up. Please keep it kind.</p>
-              </div>
-              <p class="gb-status" role="status" aria-live="polite"></p>
-            </form>
-
-            <div class="gb-wall" data-gb-wall>
-              <ul class="gb-notes" data-gb-notes aria-label="Notes on the wall"></ul>
-              <p class="gb-empty" data-gb-empty hidden></p>
-              <button class="btn btn--ghost btn--sm gb-more" data-gb-more hidden><span>See more notes</span></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 2: private suggestions, sent to Prakruti's email, never shown on the site -->
-        <div class="gb-panel" id="gb-panel-suggest" role="tabpanel" aria-labelledby="gb-tab-suggest" hidden>
-          <div class="gb-suggest">
-            <div class="gb-suggest__intro">
-              <blockquote class="gb-quote">
-                <svg class="gb-quote__doodle" aria-hidden="true"><use href="#gb-leaf"/></svg>
-                <p>“I believe we keep learning as long as we're alive.”</p>
-                <svg class="gb-quote__sig" viewBox="0 0 320 90" aria-hidden="true"><path class="draw" d="M10 70 C30 20 40 10 44 40 C46 60 30 70 26 58 C24 40 60 30 70 44 C76 54 70 64 80 60 C92 54 96 40 104 46 C110 52 100 66 112 62 C124 58 128 44 136 50 C142 56 138 66 150 62 C170 54 170 20 180 30 C186 40 170 64 186 62 C200 60 204 44 214 50 C222 56 216 66 228 62 C248 54 258 40 272 48 C284 56 290 60 310 52"/></svg>
-              </blockquote>
-              <p>So teach me something. Tell me a piece you'd love to see me paint, a subject or medium to try, something about this site, or anything at all.</p>
-              <p class="gb-private"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3"/><rect x="5" y="11" width="14" height="10" rx="2"/></svg>Suggestions are private. They come straight to me and never appear on the site.</p>
-            </div>
-
-            <form class="gb-form gb-form--suggest" data-suggest-form novalidate>
-              <fieldset class="chips">
-                <legend class="label">My suggestion is about</legend>
-                <label><input type="radio" name="topic" value="A work I'd love to see" checked><span>A work I'd love to see</span></label>
-                <label><input type="radio" name="topic" value="Something to try or learn"><span>Something to try or learn</span></label>
-                <label><input type="radio" name="topic" value="The website"><span>The website</span></label>
-                <label><input type="radio" name="topic" value="Anything else"><span>Anything else</span></label>
-              </fieldset>
-              <div class="field">
-                <textarea id="sg-msg" name="message" rows="4" maxlength="2000" placeholder=" " required></textarea>
-                <label for="sg-msg">Your suggestion</label>
-              </div>
-              <div class="gb-row">
-                <div class="field">
-                  <input id="sg-name" name="name" type="text" maxlength="60" autocomplete="name" placeholder=" ">
-                  <label for="sg-name">Your name (optional)</label>
-                </div>
-                <div class="field">
-                  <input id="sg-email" name="email" type="email" maxlength="120" autocomplete="email" placeholder=" ">
-                  <label for="sg-email">Email for a reply (optional)</label>
-                </div>
-              </div>
-              <input class="gb-trap" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
-              <div class="gb-submit">
-                <button type="submit" class="btn btn--primary magnetic"><span>Send to Prakruti</span></button>
-              </div>
-              <p class="gb-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- 2. ABOUT -->
     <section class="story" id="about" aria-labelledby="story-title">
       <div class="wrap story__grid">
@@ -314,7 +158,7 @@
           </figure>
         </div>
         <div class="story__text">
-          <p class="label">02 — About</p>
+          <p class="label">01 — About</p>
           <h2 class="h2 reveal-lines story__title" id="story-title">Trained in fine art. Driven by curiosity. <em>Happiest with paint on my hands.</em></h2>
           <div class="story__copy">
             <p>I'm Prakruti, a multidisciplinary visual artist working across drawing, painting, murals and commissioned artwork.</p>
@@ -353,7 +197,7 @@
     <section class="education" id="education" aria-labelledby="education-title">
       <div class="wrap education__grid">
         <div class="education__intro">
-          <p class="label">03 — Art &amp; Education</p>
+          <p class="label">02 — Art &amp; Education</p>
           <h2 class="h2 reveal-lines" id="education-title">Sharing the <em>practice.</em></h2>
           <p>My teaching grows out of my own studio work: strong fundamentals in observation, drawing and colour, shared with patience and encouragement.</p>
         </div>
@@ -376,7 +220,7 @@
     <section class="services" id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="label">04 — Work With Me</p>
+          <p class="label">03 — Work With Me</p>
           <h2 class="h1 reveal-lines" id="services-title">Let's make something <em>together.</em></h2>
         </div>
         <ul class="offers">
@@ -425,7 +269,7 @@
       <div class="wrap">
         <div class="selected__head">
           <div>
-            <p class="label">05 — Selected Work</p>
+            <p class="label">04 — Selected Work</p>
             <h2 class="h1 reveal-lines" id="selected-title">Selected <em>work.</em></h2>
           </div>
           <p class="selected__intro">A curated edit across walls, canvas and paper: murals, oil, acrylic, watercolour, ink and life drawing.</p>
@@ -488,7 +332,7 @@
       <div class="work__pin">
         <div class="wrap work__head">
           <div>
-            <p class="label">06 — Portfolio</p>
+            <p class="label">05 — Portfolio</p>
             <h2 class="h1" id="work-title">The <em>portfolio</em></h2>
           </div>
           <div class="filters" role="group" aria-label="Filter work" data-filters>
@@ -512,7 +356,7 @@
       <div class="wrap">
         <div class="murals__head">
           <div>
-            <p class="label">07 — Murals &amp; Client Projects</p>
+            <p class="label">06 — Murals &amp; Client Projects</p>
             <h2 class="h1 reveal-lines" id="murals-title">Walls, spaces <em>&amp; commissions.</em></h2>
           </div>
           <p class="murals__intro">More than eight years of large-scale murals and commissioned pieces for cafés, restaurants, offices, homes and IIM Ahmedabad, each one planned, drawn out and painted by hand.</p>
@@ -558,7 +402,7 @@
     <section class="shop" id="shop" aria-labelledby="shop-title">
       <div class="wrap shop__grid">
         <div class="shop__intro">
-          <p class="label">08 — Shop</p>
+          <p class="label">07 — Shop</p>
           <h2 class="h1 reveal-lines" id="shop-title">The Canvas <em>Shop.</em></h2>
           <p class="shop__lead">Something new is on the easel. A shop for my canvas paintings is coming soon.</p>
           <form class="shop__notify" data-notify novalidate>
@@ -604,7 +448,7 @@
     <section class="enquire" id="enquire" aria-labelledby="enquire-title">
       <div class="wrap enquire__grid">
         <div class="enquire__intro">
-          <p class="label">09 — Contact</p>
+          <p class="label">08 — Contact</p>
           <h2 class="h2" id="enquire-title">Start with a <em>hello.</em></h2>
           <p>Fill this in and your email app will open with everything ready to send. Or reach me directly:</p>
           <ul class="enquire__direct">
@@ -654,8 +498,7 @@
     <div class="wrap footer__cols">
       <div>
         <p class="label">Navigate</p>
-        <a href="#guestbook" class="u-link">Guestbook</a>
-      <a href="#about" class="u-link">About</a><a href="#services" class="u-link">Services</a><a href="#selected" class="u-link">Work</a><a href="#shop" class="u-link">Shop (soon)</a><a href="#enquire" class="u-link">Contact</a>
+        <a href="#about" class="u-link">About</a><a href="#services" class="u-link">Services</a><a href="#selected" class="u-link">Work</a><a href="#shop" class="u-link">Shop (soon)</a><a href="#enquire" class="u-link">Contact</a>
       </div>
       <div>
         <p class="label">Connect</p>
@@ -689,6 +532,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>
